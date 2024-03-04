@@ -1,0 +1,20 @@
+{
+    "CustomerProfile": {
+        "Customer_Number":"9632585",
+        "Name": "Ameer",
+        "Phone_Number": "971584258963",
+        "National_ID": "789487569325841",
+        "Email": "test456@gmail.com",
+        "Legal_ID": [
+            {
+                "Legal_ID_Type":"Passport",
+                "Legal_ID_No":"F425415"
+            },
+            {
+                "Legal_ID_Type":"NationalID",
+                "Legal_ID_No":"789487569325841"
+            }
+        ]
+           
+    }
+}
