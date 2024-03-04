@@ -28,7 +28,7 @@ app.get('/api/data/:id', (req, res) => {
     const id = req.params.id;
    console.log("print : " + id);
     if((id !== null || id !== undefined ) && id == "4567893" ){
-        fs.readFile('CIF_data.json', 'utf8', (err, data) => {
+        fs.readFile('CIF_Data.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
@@ -46,7 +46,7 @@ app.get('/api/data/:id', (req, res) => {
             res.json(JSON.parse(data));
         });
     }else if((id !== null || id !== undefined ) && id == "9632585" ){
-        fs.readFile('CIF_data_1.json', 'utf8', (err, data) => {
+        fs.readFile('CIF_Data_1.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
