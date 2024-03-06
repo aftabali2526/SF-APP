@@ -52,11 +52,11 @@ app.get('/api/data/:id', (req, res) => {
 
 app.post('/api/sf/customerSearch', (req, res) => {
     // Extract user data from request body
-    const { channelId, userId, password,terminalId,messageType,dateTime,tranCode,stan } = req.body.header;
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
     const { type, value, } = req.body.body;
-     
+    console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
-    if (!channelId || !userId || !password) {
+    if (!channelid || !userid || !password) {
         return res.status(400).json({ error: 'Missing header fields' });
     }
 

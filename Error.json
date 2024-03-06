@@ -1,7 +1,7 @@
 {
     "data":{
        "code":1,
-       "message":"Customer search results fetched successfully!",
+       "message":"No results found!",
        "httpStatus":"INTERNAL_SERVER_ERROR",
        "httpStatusCode":500,
        "body":{ },
