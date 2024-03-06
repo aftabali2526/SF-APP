@@ -1,0 +1,17 @@
+{
+    "data":{
+       "code":1,
+       "message":"Customer search results fetched successfully!",
+       "httpStatus":"INTERNAL_SERVER_ERROR",
+       "httpStatusCode":500,
+       "body":{ },
+       "error":{
+        "code":"VALIDATION_ERROR",
+        "message":"No results found!",
+        "details":{
+           "message":"No results found!"
+            }
+        }
+    }
+       
+}

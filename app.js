@@ -5,6 +5,7 @@ const fs = require('fs');
 // Create Express application
 const app = express();
 const port = 80;
+app.use(express.json());
 app.use(express.static('public'));
 // Define route to fetch data from static JSON file
 app.get('/api/data', (req, res) => {
@@ -34,15 +35,6 @@ app.get('/api/data/:id', (req, res) => {
                 res.status(500).json({ error: 'Internal Server Error' });
                 return;
             }
-            // Parse JSON data and find item by ID
-            //const jsonData = JSON.parse(data);
-            //const id = req.params.id;
-            //const item = jsonData.find(item => item.id === id);
-            //if (!item) {
-              //  res.status(404).json({ error: 'Item not found' });
-               // return;
-            //}
-            // Send item in response
             res.json(JSON.parse(data));
         });
     }else if((id !== null || id !== undefined ) && id == "9632585" ){
@@ -52,19 +44,56 @@ app.get('/api/data/:id', (req, res) => {
                 res.status(500).json({ error: 'Internal Server Error' });
                 return;
             }
-            // Parse JSON data and find item by ID
-            // const jsonData = JSON.parse(data);
-            //const id = req.params.id;
-            //const item = jsonData.find(item => item.id === id);
-            //if (!item) {
-              //  res.status(404).json({ error: 'Item not found' });
-               // return;
-            //}
-            // Send item in response
             res.json(JSON.parse(data));
         });
     }
     
+});
+
+app.post('/api/sf/customerSearch', (req, res) => {
+    // Extract user data from request body
+    const { channelId, userId, password,terminalId,messageType,dateTime,tranCode,stan } = req.body.header;
+    const { type, value, } = req.body.body;
+     
+    // Validate request data (for demonstration purposes)
+    if (!channelId || !userId || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!type || !value ) {
+        return res.status(400).json({ error: 'Missing required fields, type or value in request' });
+    }
+
+    
+    if((type == "CIF") && (value !== null || value !== undefined ) && value == "4567893" ){
+        fs.readFile('CIF_Data.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else if((type == "CIF" || type == "AccountNumber" ) && (value !== null || value !== undefined ) && (value == "9632585" || value == "10000000159")){
+        fs.readFile('CIF_Data_1.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else {
+        fs.readFile('Error.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+     
 });
 
 // Start the server
