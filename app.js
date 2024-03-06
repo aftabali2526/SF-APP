@@ -53,7 +53,7 @@ app.get('/api/data/:id', (req, res) => {
 app.post('/api/sf/customerSearch', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
-    const { type, value, } = req.body.body;
+    const { type, value, } = req.body;
     console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
     if (!channelid || !userid || !password) {
