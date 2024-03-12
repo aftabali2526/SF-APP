@@ -8,8 +8,8 @@
         "customersList":[
            {
               "cif":"1234567",
-              "fullName":"Abdullah Khan",
-              "firstName":"Abdullah",
+              "fullName":"ameer Khan",
+              "firstName":"ameer",
               "lastName":"Khan",
               "middleName":null,
               "fatherName":"Samee Khan",
@@ -49,9 +49,9 @@
            },
            {
               "cif":"7854896",
-              "fullName":"Abdullah Khan 2",
-              "firstName":"Abdullah 2",
-              "lastName":"Khan",
+              "fullName":"ameera abdullah",
+              "firstName":"ameera",
+              "lastName":"abdullah",
               "middleName":null,
               "fatherName":"Samee Khan 2",
               "matherName":"Fatima",
