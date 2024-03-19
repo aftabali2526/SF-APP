@@ -111,16 +111,61 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
     }
 
     
-   if(customerName.toLowerCase().includes("ameer")){
-        fs.readFile('CIF_Data_2.json', 'utf8', (err, data) => {
+   if(customerName.toLowerCase().includes("ameer") && mobileNumber.toLowerCase().includes("586947581")){
+        fs.readFile('CIF_Data_3.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
                 return;
             }
-            res.status(200).json(JSON.parse(data));
+          return  res.status(200).json(JSON.parse(data));
         });
-    } 
+    }else if(customerName.toLowerCase().includes("ameer") && emailAddress.toLowerCase().includes("test")){
+        fs.readFile('CIF_Data_4.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else if(mobileNumber.toLowerCase().includes("586947581")){
+        fs.readFile('CIF_Data_3.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else if(nationalId.toLowerCase().includes("789632541258523")){
+        fs.readFile('CIF_Data_3.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else if(passportNumber.toLowerCase().includes("f555")){
+        fs.readFile('CIF_Data_5.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else{
+        fs.readFile('CIF_Data_5.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
      
 });
 

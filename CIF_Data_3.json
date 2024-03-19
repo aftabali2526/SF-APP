@@ -1,0 +1,54 @@
+{
+    "data":{
+       "code":1,
+       "message":"Customer search results fetched successfully!",
+       "httpStatus":"OK",
+       "httpStatusCode":200,
+       "body":{
+        "customersList":[
+           {
+              "cif":"1234567",
+              "fullName":"ameer Khan",
+              "firstName":"ameer",
+              "lastName":"Khan",
+              "middleName":null,
+              "fatherName":"Samee Khan",
+              "matherName":"Fatima",
+              "nationalId":"789632541258523",
+              "nationalIdExpiryDate":"5/26/2021",
+              "dob":"5/26/2021",
+              "gender":"M",
+              "creationDate":"5/26/2021",
+              "ntn":"258741",
+              "cityOfBirth":"Karachi",
+              "countryOfBirth":"PK",
+              "residenceAddress":"Gulistan e Juhar, Karachi, Sindh, Pakistan",
+              "officeAddress":"Gulistan e Juhar, Karachi, Sindh, Pakistan",
+              "email":"ameer.khan@gmail.com",
+              "passportNumber":"F458755",
+              "passportExpiryDate":"5/26/2021",
+              "customerSegment":"1001",
+              "phoneNumber":"971586947581",
+              "nationality":"PK",
+              "salary":"9999",
+              "availableBalance":{
+                 "amount":"518.585",
+                 "currency":"AED",
+                 "localeFormattedAmount":null
+              },
+              "Legal_ID":[
+                 {
+                    "Legal_ID_Type":"Passport",
+                    "Legal_ID_No":"F458755"
+                 },
+                 {
+                    "Legal_ID_Type":"NationalID",
+                    "Legal_ID_No":"789254785693258"
+                 }
+              ],
+              "intialDepositAmount":"500"
+           }
+        ]
+     }
+    }
+ }
