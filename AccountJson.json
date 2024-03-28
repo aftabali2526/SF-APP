@@ -8,6 +8,7 @@
             "checkingAccountsList": [
                 {
                     "accountNumber": "011000204029",
+                    "accountTitle":"Abdullah Khan",
                     "category": "checking",
                     "currency": "AED",
                     "openingDate": "25-Dec-2023",
@@ -17,6 +18,7 @@
             "savingAccountsList": [
                 {
                     "accountNumber": "011000204333",
+                    "accountTitle":"Abdullah Khan",
                     "category": "saving",
                     "currency": "AED",
                     "openingDate": "24-Nov-2023",
@@ -27,6 +29,7 @@
             "loanAccountsList": [
                 {
                     "accountNumber": "011000204455",
+                    "accountTitle":"Abdullah Khan",
                     "category": "loan",
                     "currency": "AED",
                     "openingDate": "12-Jan-2024",

@@ -206,6 +206,15 @@ app.post('/api/sf/getAccount', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
+    }else{
+        fs.readFile('No_Result.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
     }
      
 });
@@ -227,7 +236,7 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
 
     
     if((cif !== null || cif !== undefined ) && cif == "4567893" ){
-        fs.readFile('Account_details_1.json', 'utf8', (err, data) => {
+        fs.readFile('Account_details.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
@@ -236,7 +245,16 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
           return  res.status(200).json(JSON.parse(data));
         });
     }else if((cif !== null || cif !== undefined ) && cif == "9632585" ){
-        fs.readFile('Account_details_2', 'utf8', (err, data) => {
+        fs.readFile('Account_details_1', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else{
+        fs.readFile('No_Result.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
