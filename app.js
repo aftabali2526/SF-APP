@@ -223,19 +223,19 @@ app.post('/api/sf/getAccount', (req, res) => {
 app.post('/api/sf/getAccountsDetails', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
-    const { cif } = req.body;
+    const { accountNumber } = req.body;
     console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
     if (!channelid || !userid || !password) {
         return res.status(400).json({ error: 'Missing header fields' });
     }
 
-    if (!cif) {
-        return res.status(400).json({ error: 'Missing required fields, cif in request' });
+    if (!accountNumber) {
+        return res.status(400).json({ error: 'Missing required fields, Account Number in request' });
     }
 
     
-    if((cif !== null || cif !== undefined ) && cif == "4567893" ){
+    if((accountNumber !== null || cif !== undefined ) && cif == "011000204029" ){
         fs.readFile('Account_details.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -244,7 +244,7 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
-    }else if((cif !== null || cif !== undefined ) && cif == "9632585" ){
+    }else if((cif !== null || cif !== undefined ) && cif == "033000204029" ){
         fs.readFile('Account_details_1', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
