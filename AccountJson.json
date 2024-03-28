@@ -1,0 +1,39 @@
+{
+    "data": {
+        "code": 1,
+        "message": "Accounts results fetched successfully!",
+        "httpStatus": "OK",
+        "httpStatusCode": 200,
+        "body": {
+            "checkingAccountsList": [
+                {
+                    "accountNumber": "011000204029",
+                    "category": "checking",
+                    "currency": "AED",
+                    "openingDate": "25-Dec-2023",
+                    "balance": "23650.00"
+                }
+            ],
+            "savingAccountsList": [
+                {
+                    "accountNumber": "011000204333",
+                    "category": "saving",
+                    "currency": "AED",
+                    "openingDate": "24-Nov-2023",
+                    "balance": "69850.00"
+                }
+            ],
+            "tdrList": [],
+            "loanAccountsList": [
+                {
+                    "accountNumber": "011000204455",
+                    "category": "loan",
+                    "currency": "AED",
+                    "openingDate": "12-Jan-2024",
+                    "balance": "56650.00"
+                }
+            ],
+            "targetSavingAccountsList": []
+        }
+    }
+}

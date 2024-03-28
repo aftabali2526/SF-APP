@@ -170,6 +170,85 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
 });
 
 
+
+
+
+app.post('/api/sf/getAccount', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { cif } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!cif) {
+        return res.status(400).json({ error: 'Missing required fields, cif in request' });
+    }
+
+    
+    if((cif !== null || cif !== undefined ) && cif == "4567893" ){
+        fs.readFile('AccountJson.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else if((cif !== null || cif !== undefined ) && cif == "9632585" ){
+        fs.readFile('AccountJson_1.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
+
+
+app.post('/api/sf/getAccountsDetails', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { cif } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!cif) {
+        return res.status(400).json({ error: 'Missing required fields, cif in request' });
+    }
+
+    
+    if((cif !== null || cif !== undefined ) && cif == "4567893" ){
+        fs.readFile('Account_details_1.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else if((cif !== null || cif !== undefined ) && cif == "9632585" ){
+        fs.readFile('Account_details_2', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
+
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

@@ -1,0 +1,81 @@
+{
+    "data": {
+        "code": 1,
+        "message": "Accounts results fetched successfully!",
+        "httpStatus": "OK",
+        "httpStatusCode": 200,
+        "body": {
+            "checkingAccountsList": [
+                {
+                    "accountNumber": "033000204029",
+                    "category": "checking",
+                    "currency": "AED",
+                    "openingDate": "01-Dec-2023",
+                    "balance": "53650.00",
+                    "accountStatus": "ACTIVE",
+					"currencyCode": "048",
+					"currencyDecimals": "3",
+					"accountOfficerName": null,
+					"accountOfficerEmail": null,
+					"accountOfficerContactNo": null,
+					"debitAmount": null,
+					"creditAmount": null,
+					"postingDate": null,
+					"isDefaultAccount": null,
+					"iban": "AE20ENBD013258888800001",
+					"accountActualBalance": null,
+					"branchName": null,
+					"branchCode": "5"
+                }
+            ],
+            "savingAccountsList": [
+                {
+                    "accountNumber": "044000204333",
+                    "category": "saving",
+                    "currency": "AED",
+                    "openingDate": "15-Nov-2023",
+                    "balance": "15250.00",
+                    "accountStatus": "ACTIVE",
+					"currencyCode": "048",
+					"currencyDecimals": "3",
+					"accountOfficerName": null,
+					"accountOfficerEmail": null,
+					"accountOfficerContactNo": null,
+					"debitAmount": null,
+					"creditAmount": null,
+					"postingDate": null,
+					"isDefaultAccount": null,
+					"iban": "AE20ENBD013258888800002",
+					"accountActualBalance": null,
+					"branchName": null,
+					"branchCode": "5"
+                }
+            ],
+            "tdrList": [],
+            "loanAccountsList": [
+                {
+                    "accountNumber": "055000204455",
+                    "category": "loan",
+                    "currency": "AED",
+                    "openingDate": "16-Jan-2024",
+                    "balance": "35950.00",
+                    "accountStatus": "ACTIVE",
+					"currencyCode": "048",
+					"currencyDecimals": "3",
+					"accountOfficerName": null,
+					"accountOfficerEmail": null,
+					"accountOfficerContactNo": null,
+					"debitAmount": null,
+					"creditAmount": null,
+					"postingDate": null,
+					"isDefaultAccount": null,
+					"iban": "AE20ENBD013258888800003",
+					"accountActualBalance": null,
+					"branchName": null,
+					"branchCode": "5"
+                }
+            ],
+            "targetSavingAccountsList": []
+        }
+    }
+}
