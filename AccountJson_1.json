@@ -1,42 +1,66 @@
 {
-    "data": {
-        "code": 1,
-        "message": "Accounts results fetched successfully!",
-        "httpStatus": "OK",
-        "httpStatusCode": 200,
-        "body": {
-            "checkingAccountsList": [
-                {
-                    "accountNumber": "033000204029",
-                    "accountTitle": "Ameer Khan",
-                    "category": "checking",
-                    "currency": "AED",
-                    "openingDate": "01-Dec-2023",
-                    "balance": "53650.00"
-                }
-            ],
-            "savingAccountsList": [
-                {
-                    "accountNumber": "044000204333",
-                    "accountTitle": "Ameer Khan",
-                    "category": "saving",
-                    "currency": "AED",
-                    "openingDate": "15-Nov-2023",
-                    "balance": "15250.00"
-                }
-            ],
-            "tdrList": [],
-            "loanAccountsList": [
-                {
-                    "accountNumber": "055000204455",
-                    "accountTitle": "Ameer Khan",
-                    "category": "loan",
-                    "currency": "AED",
-                    "openingDate": "16-Jan-2024",
-                    "balance": "35950.00"
-                }
-            ],
-            "targetSavingAccountsList": []
+  "data": {
+    "code": 1,
+    "message": "Accounts results fetched successfully!",
+    "httpStatus": "OK",
+    "httpStatusCode": 200,
+    "body": {
+      "checkingAccountsList": [
+        {
+          "accountNumber": "033000204029",
+          "accountTitle": "Ameer Khan",
+          "category": "checking",
+          "currency": "AED",
+          "openingDate": "01-Dec-2023",
+          "balance": "53650.00"
         }
+      ],
+      "savingAccountsList": [
+        {
+          "accountNumber": "044000204333",
+          "accountTitle": "Ameer Khan",
+          "category": "saving",
+          "currency": "AED",
+          "openingDate": "15-Nov-2023",
+          "balance": "15250.00"
+        }
+      ],
+      "tdrList": [
+        {
+          "depositId": "45875558",
+          "depositAmount": "65855",
+          "profitRate": "5.00",
+          "currency": "AED",
+          "startDate": "01-Dec-2023"
+        }
+      ],
+      "loanAccountsList": [
+        {
+          "accountNumber": "055000204455",
+          "accountTitle": "Ameer Khan",
+          "category": "loan",
+          "currency": "AED",
+          "openingDate": "16-Jan-2024",
+          "balance": "35950.00"
+        }
+      ],
+      "debitCardList": [
+        {
+          "cardNumber": "4458562547892356",
+          "cardProduct": "Visa",
+          "linkedAccount": "033000204029",
+          "status": "Active"
+        }
+      ],
+      "creditCardList": [
+        {
+          "cardNumber": "5253521457894784",
+          "cardProduct": "Master Card",
+          "availableLimit": "15000",
+          "expiryDate": "31-Dec-2027",
+          "status": "Active"
+        }
+      ]
     }
+  }
 }
