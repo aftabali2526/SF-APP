@@ -10,7 +10,7 @@
           "accountNumber": "011000204029",
           "accountTitle": "Abdullah Khan",
           "category": "checking",
-          "currency": "AED",
+          "currencyLocalLocal": "AED",
           "openingDate": "25-Dec-2023",
           "balance": "23650.00"
         }
@@ -20,7 +20,7 @@
           "accountNumber": "011000204333",
           "accountTitle": "Abdullah Khan",
           "category": "saving",
-          "currency": "AED",
+          "currencyLocal": "AED",
           "openingDate": "24-Nov-2023",
           "balance": "69850.00"
         }
@@ -30,7 +30,7 @@
           "depositId": "12548885",
           "depositAmount": "547855",
           "profitRate": "5.25",
-          "currency": "AED",
+          "currencyLocal": "AED",
           "startDate": "24-Dec-2023"
         }
       ],

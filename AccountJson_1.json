@@ -10,7 +10,7 @@
           "accountNumber": "033000204029",
           "accountTitle": "Ameer Khan",
           "category": "checking",
-          "currency": "AED",
+          "currencyLocal": "AED",
           "openingDate": "01-Dec-2023",
           "balance": "53650.00"
         }
@@ -20,7 +20,7 @@
           "accountNumber": "044000204333",
           "accountTitle": "Ameer Khan",
           "category": "saving",
-          "currency": "AED",
+          "currencyLocal": "AED",
           "openingDate": "15-Nov-2023",
           "balance": "15250.00"
         }
@@ -30,7 +30,7 @@
           "depositId": "45875558",
           "depositAmount": "65855",
           "profitRate": "5.00",
-          "currency": "AED",
+          "currencyLocal": "AED",
           "startDate": "01-Dec-2023"
         }
       ],
@@ -39,7 +39,7 @@
           "accountNumber": "055000204455",
           "accountTitle": "Ameer Khan",
           "category": "loan",
-          "currency": "AED",
+          "currencyLocal": "AED",
           "openingDate": "16-Jan-2024",
           "balance": "35950.00"
         }
