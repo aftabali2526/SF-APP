@@ -36,12 +36,12 @@
       ],
       "loanAccountsList": [
         {
-          "accountNumber": "055000204455",
-          "accountTitle": "Ameer Khan",
-          "category": "loan",
-          "currencyLocal": "AED",
-          "openingDate": "16-Jan-2024",
-          "balance": "35950.00"
+          "financeId": "58965585",
+          "profitRate": "5.36",
+          "maturityDate": "24-Dec-2023",
+          "remainInstallment": "20",
+          "paymentAmount": "521",
+          "category": "loan"
         }
       ],
       "debitCardList": [
