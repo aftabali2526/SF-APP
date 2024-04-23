@@ -9,7 +9,7 @@
         {
           "accountNumber": "011000204029",
           "accountTitle": "Abdullah Khan",
-          "category": "checking",
+          "category": "checkingAccount",
           "currencyLocalLocal": "AED",
           "openingDate": "25-Dec-2023",
           "balance": "23650.00"
@@ -19,7 +19,7 @@
         {
           "accountNumber": "011000204333",
           "accountTitle": "Abdullah Khan",
-          "category": "saving",
+          "category": "savingAccount",
           "currencyLocal": "AED",
           "openingDate": "24-Nov-2023",
           "balance": "69850.00"
@@ -31,7 +31,8 @@
           "depositAmount": "547855",
           "profitRate": "5.25",
           "currencyLocal": "AED",
-          "startDate": "24-Dec-2023"
+          "startDate": "24-Dec-2023",
+          "category": "tdrAccount"
         }
       ],
       "loanAccountsList": [
@@ -41,7 +42,7 @@
           "maturityDate": "24-Dec-2023",
           "remainInstallment": "20",
           "paymentAmount": "521",
-          "category": "loan"
+          "category": "loanAccount"
         }
       ],
       "creditCardAccountList": [
