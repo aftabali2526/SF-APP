@@ -44,21 +44,13 @@
           "category": "loan"
         }
       ],
-      "debitCardList": [
+      "creditCardAccountList": [
         {
-          "cardNumber": "5253562547895254",
-          "cardProduct": "Visa",
-          "linkedAccount": "011000204029",
-          "status": "Active"
-        }
-      ],
-      "creditCardList": [
-        {
-          "cardNumber": "5253521457894784",
-          "cardProduct": "Master Card",
-          "availableLimit": "45000",
-          "expiryDate": "31-Dec-2028",
-          "status": "Active"
+          "accountTitle": "Abdullah Khan",
+          "status": "Active",
+          "balance": "69850.00",
+          "openingDate": "24-Nov-2023",
+          "category": "creditCardAccount"
         }
       ]
     }
