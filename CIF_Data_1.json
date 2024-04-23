@@ -29,6 +29,9 @@
           "nationality":"PK",
           "salary":"88889",
           "phoneNumber":"971586958423",
+          "customerSegmentation":"Gold",
+          "loyaltyPoint":"1500",
+          "customerSatisfaction":"Satisfied",
           "availableBalance":{
              "amount":"596.585",
              "currency":"AED",
