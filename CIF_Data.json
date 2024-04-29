@@ -32,6 +32,9 @@
           "customerSegmentation":"Platinum",
           "loyaltyPoint":"1400",
           "customerSatisfaction":"Satisfied",
+          "npsScore":"8",
+          "isSalary":"true",
+          "isDelinquent":"false",
           "availableBalance":{
              "amount":"518.585",
              "currency":"AED",
