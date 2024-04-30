@@ -34,7 +34,7 @@
           "customerSatisfaction":"Satisfied",
           "npsScore":"8",
           "isSalary":"true",
-          "isDelinquent":"false",
+          "isDelinquent":"true",
           "availableBalance":{
              "amount":"518.585",
              "currency":"AED",
