@@ -41,7 +41,8 @@
           "mailingAddress":"Al Nahda 1, Dubai",
           "mailingStreet":"405",
           "mailingState":"Dubai",
-          "mailingZipCode":"6001",
+          "mailingCity":"Dubai",
+          "mailingZipCode":"370627",
           "mailingCountry":"AE",
           "accountOfficer":"252622",
           "availableBalance":{
