@@ -75,7 +75,7 @@ app.post('/api/sf/customerSearch', (req, res) => {
             res.status(200).json(JSON.parse(data));
         });
     }else if((type == "CIF") && (value !== null || value !== undefined ) && value == "7892585" ){
-        fs.readFile('CIF_Data_3.json', 'utf8', (err, data) => {
+        fs.readFile('CIF_Data_6.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });

@@ -1,0 +1,66 @@
+{
+  "data": {
+    "code": 1,
+    "message": "Customer search results fetched successfully!",
+    "httpStatus": "OK",
+    "httpStatusCode": 200,
+    "body": {
+      "cif": "7892585",
+      "fullName": "Ameer Khan",
+      "firstName": "Ameer",
+      "lastName": "Khan",
+      "middleName": null,
+      "fatherName": "Sameed Khan",
+      "matherName": "Maryam",
+      "nationalId": "789632541254785",
+      "nationalIdExpiryDate": "6/11/2026",
+      "dob": "8/12/2001",
+      "gender": "M",
+      "creationDate": "5/26/2021",
+      "ntn": "258741",
+      "cityOfBirth": "Dubai",
+      "countryOfBirth": "AE",
+      "residenceAddress": "Building - Al Rawdha Tower, Flat 210, Al Nahda 1, Dubai",
+      "officeAddress": "World Trade Center SZR, Office 2104, Dubai",
+      "email": "ameer.khan123@gmail.com",
+      "passportNumber": "F458444",
+      "passportExpiryDate": "5/26/2029",
+      "customerSegment": "1001",
+      "phoneNumber": "971586947581",
+      "nationality": "AE",
+      "salary": "12000",
+      "customerSegmentation": "Platinum",
+      "loyaltyPoint": "1400",
+      "customerSatisfaction": "Satisfied",
+      "npsScore": "8",
+      "isSalary": "true",
+      "isDelinquent": "true",
+      "salutation": "Mr.",
+      "branchCode": "1001",
+      "branchName": "SZR Branch",
+      "mailingAddress": "Al Nahda 1, Dubai",
+      "mailingStreet": "5425 Blue Tower, SZR",
+      "mailingState": "Dubai",
+      "mailingCity": "Dubai",
+      "mailingZipCode": "370627",
+      "mailingCountry": "AE",
+      "accountOfficer": "252622",
+      "availableBalance": {
+        "amount": "518.585",
+        "currency": "AED",
+        "localeFormattedAmount": null
+      },
+      "Legal_ID": [
+        {
+          "Legal_ID_Type": "Passport",
+          "Legal_ID_No": "F458755"
+        },
+        {
+          "Legal_ID_Type": "NationalID",
+          "Legal_ID_No": "789254785693258"
+        }
+      ],
+      "intialDepositAmount": "500"
+    }
+  }
+}
