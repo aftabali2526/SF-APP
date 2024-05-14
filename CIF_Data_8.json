@@ -1,0 +1,67 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Customer search results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "cif": "1234567",
+          "fullName": "Afaq Ali",
+          "firstName": "Afaq",
+          "lastName": "Ali",
+          "middleName": null,
+          "fatherName": "Mohammed Ali",
+          "matherName": "Razia",
+          "nationalId": "789632541245875",
+          "nationalIdExpiryDate": "9/3/2025",
+          "dob": "5/26/1998",
+          "gender": "M",
+          "creationDate": "3/22/2020",
+          "ntn": "258741",
+          "cityOfBirth": "Sharja",
+          "countryOfBirth": "AE",
+          "residenceAddress": "Al Majaz Tower 2, Flat 210, Al Majaz, Sharja",
+          "officeAddress": "World Trade Center SZR, Office 2104, Dubai",
+          "email": "afaq.ali@hotmail.com",
+          "passportNumber": "F458478",
+          "passportExpiryDate": "1/21/2029",
+          "customerSegment": "1001",
+          "phoneNumber": "971586941452",
+          "nationality": "AE",
+          "salary": "13000",
+          "customerSegmentation": "Gold",
+          "loyaltyPoint": "1500",
+          "customerSatisfaction": "Satisfied",
+          "npsScore":"5",
+          "isSalary":"true",
+          "isDelinquent":"false",
+          "salutation":"Mr.",
+          "branchCode":"1001",
+          "branchName":"SZR Branch",
+          "mailingAddress":"Al Nahda 1, Dubai",
+          "mailingStreet":"5425 Blue Tower, SZR",
+          "mailingState":"Dubai",
+          "mailingCity":"Dubai",
+          "mailingZipCode":"370627",
+          "mailingCountry":"AE",
+          "accountOfficer":"252622",
+        "availableBalance": {
+          "amount": "518.585",
+          "currency": "AED",
+          "localeFormattedAmount": null
+        },
+        "Legal_ID": [
+          {
+            "Legal_ID_Type": "Passport",
+            "Legal_ID_No": "F458755"
+          },
+          {
+            "Legal_ID_Type": "NationalID",
+            "Legal_ID_No": "789254785693258"
+          }
+        ],
+        "intialDepositAmount": "500"
+      }
+    }
+  }
+  

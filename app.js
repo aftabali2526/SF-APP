@@ -83,6 +83,15 @@ app.post('/api/sf/customerSearch', (req, res) => {
             }
             res.status(200).json(JSON.parse(data));
         });
+    }else if((type == "CIF") && (value !== null || value !== undefined ) && value == "1234567" ){
+        fs.readFile('CIF_Data_8.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
     }else if((type == "CIF" || type == "AccountNumber" ) && (value !== null || value !== undefined ) && (value == "9632585" || value == "10000000159")){
         fs.readFile('CIF_Data_1.json', 'utf8', (err, data) => {
             if (err) {
