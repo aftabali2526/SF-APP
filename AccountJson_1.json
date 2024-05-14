@@ -8,7 +8,7 @@
       "checkingAccountsList": [
         {
           "accountNumber": "033000204029",
-          "accountTitle": "Ameer Khan",
+          "accountTitle": "Ameera Khan",
           "category": "checkingAccount",
           "currencyLocal": "AED",
           "openingDate": "01-Dec-2023",
@@ -18,7 +18,7 @@
       "savingAccountsList": [
         {
           "accountNumber": "044000204333",
-          "accountTitle": "Ameer Khan",
+          "accountTitle": "Ameera Khan",
           "category": "savingAccount",
           "currencyLocal": "AED",
           "openingDate": "15-Nov-2023",
@@ -47,7 +47,7 @@
       ],
        "creditCardAccountList": [
         {
-          "accountTitle": "Abdullah Khan",
+          "accountTitle": "Ameera Khan",
           "status": "Active",
           "balance": "69850.00",
           "openingDate": "24-Nov-2023",
