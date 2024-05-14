@@ -120,7 +120,7 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
-    }else if(customerName.toLowerCase().includes("ameer") && emailAddress.toLowerCase().includes("test")){
+    }else if(customerName.toLowerCase().includes("Afaq") && emailAddress.toLowerCase().includes("hotmail")){
         fs.readFile('CIF_Data_4.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -129,8 +129,8 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
-    }else if(mobileNumber.toLowerCase().includes("586947581")){
-        fs.readFile('CIF_Data_3.json', 'utf8', (err, data) => {
+    }else if(mobileNumber.toLowerCase().includes("0554538343")){
+        fs.readFile('CIF_Data.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
@@ -138,7 +138,7 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
-    }else if(nationalId.toLowerCase().includes("789632541258523")){
+    }else if(nationalId.toLowerCase().includes("789632541254785")){
         fs.readFile('CIF_Data_3.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
