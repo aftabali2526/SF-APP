@@ -129,7 +129,7 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
-    }else if(customerName.toLowerCase().includes("Afaq") && emailAddress.toLowerCase().includes("hotmail")){
+    }else if(customerName.toLowerCase().includes("afaq") && emailAddress.toLowerCase().includes("hotmail")){
         fs.readFile('CIF_Data_4.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
