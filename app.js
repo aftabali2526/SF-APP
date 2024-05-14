@@ -139,7 +139,7 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
           return  res.status(200).json(JSON.parse(data));
         });
     }else if(mobileNumber.toLowerCase().includes("0554538343")){
-        fs.readFile('CIF_Data.json', 'utf8', (err, data) => {
+        fs.readFile('CIF_Data_7.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });

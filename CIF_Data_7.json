@@ -1,0 +1,71 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Customer search results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "customersList": [
+          {
+            "cif":"4567893",
+          "fullName":"Abdullah Khan",
+          "firstName":"Abdullah",
+          "lastName":"Khan",
+          "middleName":null,
+          "fatherName":"Samee Khan",
+          "matherName":"Fatima",
+          "nationalId":"789632541258523",
+          "nationalIdExpiryDate":"5/26/2025",
+          "dob":"5/26/1995",
+          "gender":"M",
+          "creationDate":"5/26/2022",
+          "ntn":"258741",
+          "cityOfBirth":"Dubai",
+          "countryOfBirth":"AE",
+          "residenceAddress":"Building - Bin Juma 4, Flat 610, Al Nahda 1, Dubai",
+          "officeAddress":"Latifa Tower SZR, Office 3404, Dubai",
+          "email":"adbullah.khan@gmail.com",
+          "passportNumber":"F458755",
+          "passportExpiryDate":"6/25/2030",
+          "customerSegment":"1001",
+          "nationality":"AE",
+          "salary":"25000",
+          "phoneNumber":"0554538343",
+          "customerSegmentation":"Gold",
+          "loyaltyPoint":"1400",
+          "customerSatisfaction":"Satisfied",
+          "npsScore":"8",
+          "isSalary":"true",
+          "isDelinquent":"true",
+          "salutation":"Mr.",
+          "branchCode":"1001",
+          "branchName":"SZR Branch",
+          "mailingAddress":"Al Nahda 1, Dubai",
+          "mailingStreet":"3404 Adroit Technology, Latifa Tower, SZR",
+          "mailingState":"Dubai",
+          "mailingCity":"Dubai",
+          "mailingZipCode":"370627",
+          "mailingCountry":"AE",
+          "accountOfficer":"252622",
+            "availableBalance": {
+              "amount": "518.585",
+              "currency": "AED",
+              "localeFormattedAmount": null
+            },
+            "Legal_ID": [
+              {
+                "Legal_ID_Type": "Passport",
+                "Legal_ID_No": "F458755"
+              },
+              {
+                "Legal_ID_Type": "NationalID",
+                "Legal_ID_No": "789254785693258"
+              }
+            ],
+            "intialDepositAmount": "500"
+          }
+        ]
+      }
+    }
+  }
+  
