@@ -309,7 +309,7 @@ app.post('/api/sf/financialTransactions', (req, res) => {
     }
 
     
-    if(accountNumber !== null && accountNumber != undefined && accountNumber !== '' && accountNumber == "011000204029" && fromDate !== null || toDate !== null && type !== null && type !== undefined && type == 'ministatement'){
+    if(accountNumber !== null && accountNumber != undefined && accountNumber !== '' && accountNumber == "011000204029"  && type !== null && type !== undefined &&  type !== '' && type == 'ministatement'){
         fs.readFile('mini-statement.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -320,6 +320,15 @@ app.post('/api/sf/financialTransactions', (req, res) => {
         });
     }else if(numberOfTransactions !== null && numberOfTransactions != undefined && numberOfTransactions !== '' && numberOfTransactions == '10' && accountNumber == "011000204029"){
         fs.readFile('last-10.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else if(numberOfTransactions !== null && numberOfTransactions != undefined && numberOfTransactions !== '' && numberOfTransactions == '50' && accountNumber == "011000204029"){
+        fs.readFile('last-50.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
