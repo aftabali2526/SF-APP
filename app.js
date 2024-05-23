@@ -294,6 +294,53 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
 });
 
 
+app.post('/api/sf/financialTransactions', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { accountNumber, fromDate, toDate,minAmount,maxAmount,numberOfTransactions,cardNumber, type } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!accountNumber) {
+        return res.status(400).json({ error: 'Missing required fields, type or value in request' });
+    }
+
+    
+    if(accountNumber !== null && accountNumber != undefined && accountNumber !== '' && accountNumber == "011000204029" && fromDate !== null || toDate !== null && type !== null && type !== undefined && type == 'ministatement'){
+        fs.readFile('mini-statement.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else if(numberOfTransactions !== null && numberOfTransactions != undefined && numberOfTransactions !== '' && numberOfTransactions == '10' && accountNumber == "011000204029"){
+        fs.readFile('last-10.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else {
+        fs.readFile('Error.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
+
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

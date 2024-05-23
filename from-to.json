@@ -1,0 +1,40 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Transaction search results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "transactionList": [
+          {
+                    "accountNumber": "044000204333",
+                    "valueDescription": "Education",
+                    "tranDescription": "Tuition Fee",
+                    "referenceNumber": "4242355253",
+                    "postDate": "May 13, 2024",
+                    "tranAmount": "12000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "044000204333",
+                    "valueDescription": "Insurance",
+                    "tranDescription": "Car Insurance",
+                    "referenceNumber": "4242355254",
+                    "postDate": "May 14, 2024",
+                    "tranAmount": "7000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "044000204333",
+                    "valueDescription": "Refund",
+                    "tranDescription": "Tax Refund",
+                    "referenceNumber": "4242355255",
+                    "postDate": "May 15, 2024",
+                    "tranAmount": "3000",
+                    "creditDebit": "Credit"
+                },
+        ]
+      }
+    }
+  }
+  

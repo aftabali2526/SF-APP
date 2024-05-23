@@ -1,0 +1,291 @@
+{
+    "data": {
+        "code": 1,
+        "message": "Transaction search results fetched successfully!",
+        "httpStatus": "OK",
+        "httpStatusCode": 200,
+        "body": {
+            "transactionList": [
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Salary Payment",
+                    "tranDescription": "Salary Credit",
+                    "referenceNumber": "4242355241",
+                    "postDate": "May 1, 2024",
+                    "tranAmount": "24000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Utility Payment",
+                    "tranDescription": "Electricity Bill",
+                    "referenceNumber": "4242355242",
+                    "postDate": "May 2, 2024",
+                    "tranAmount": "15000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Shopping",
+                    "tranDescription": "Online Shopping",
+                    "referenceNumber": "4242355243",
+                    "postDate": "May 3, 2024",
+                    "tranAmount": "5000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Grocery",
+                    "tranDescription": "Supermarket",
+                    "referenceNumber": "4242355244",
+                    "postDate": "May 4, 2024",
+                    "tranAmount": "7000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Fuel",
+                    "tranDescription": "Gas Station",
+                    "referenceNumber": "4242355245",
+                    "postDate": "May 5, 2024",
+                    "tranAmount": "3000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Dining",
+                    "tranDescription": "Restaurant",
+                    "referenceNumber": "4242355246",
+                    "postDate": "May 6, 2024",
+                    "tranAmount": "4000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Bonus Payment",
+                    "tranDescription": "Bonus Credit",
+                    "referenceNumber": "4242355247",
+                    "postDate": "May 7, 2024",
+                    "tranAmount": "15000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Rent Payment",
+                    "tranDescription": "House Rent",
+                    "referenceNumber": "4242355248",
+                    "postDate": "May 8, 2024",
+                    "tranAmount": "20000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Transfer",
+                    "tranDescription": "Bank Transfer",
+                    "referenceNumber": "4242355249",
+                    "postDate": "May 9, 2024",
+                    "tranAmount": "10000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Loan Repayment",
+                    "tranDescription": "Personal Loan",
+                    "referenceNumber": "4242355250",
+                    "postDate": "May 10, 2024",
+                    "tranAmount": "8000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Gift",
+                    "tranDescription": "Gift Credit",
+                    "referenceNumber": "4242355251",
+                    "postDate": "May 11, 2024",
+                    "tranAmount": "5000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Health",
+                    "tranDescription": "Hospital Bill",
+                    "referenceNumber": "4242355252",
+                    "postDate": "May 12, 2024",
+                    "tranAmount": "6000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Education",
+                    "tranDescription": "Tuition Fee",
+                    "referenceNumber": "4242355253",
+                    "postDate": "May 13, 2024",
+                    "tranAmount": "12000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Insurance",
+                    "tranDescription": "Car Insurance",
+                    "referenceNumber": "4242355254",
+                    "postDate": "May 14, 2024",
+                    "tranAmount": "7000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Refund",
+                    "tranDescription": "Tax Refund",
+                    "referenceNumber": "4242355255",
+                    "postDate": "May 15, 2024",
+                    "tranAmount": "3000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Subscription",
+                    "tranDescription": "Magazine",
+                    "referenceNumber": "4242355256",
+                    "postDate": "May 16, 2024",
+                    "tranAmount": "2000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Entertainment",
+                    "tranDescription": "Movie Ticket",
+                    "referenceNumber": "4242355257",
+                    "postDate": "May 17, 2024",
+                    "tranAmount": "1000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Savings",
+                    "tranDescription": "Savings Deposit",
+                    "referenceNumber": "4242355258",
+                    "postDate": "May 18, 2024",
+                    "tranAmount": "5000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Cash Withdrawal",
+                    "tranDescription": "ATM Withdrawal",
+                    "referenceNumber": "4242355259",
+                    "postDate": "May 19, 2024",
+                    "tranAmount": "4000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Charity",
+                    "tranDescription": "Donation",
+                    "referenceNumber": "4242355260",
+                    "postDate": "May 20, 2024",
+                    "tranAmount": "2000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Travel",
+                    "tranDescription": "Flight Ticket",
+                    "referenceNumber": "4242355261",
+                    "postDate": "May 21, 2024",
+                    "tranAmount": "15000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Mortgage Payment",
+                    "tranDescription": "Home Loan",
+                    "referenceNumber": "4242355262",
+                    "postDate": "May 22, 2024",
+                    "tranAmount": "25000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Investment",
+                    "tranDescription": "Stock Purchase",
+                    "referenceNumber": "4242355263",
+                    "postDate": "May 23, 2024",
+                    "tranAmount": "20000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Transfer",
+                    "tranDescription": "Account Transfer",
+                    "referenceNumber": "4242355264",
+                    "postDate": "May 24, 2024",
+                    "tranAmount": "10000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Wire Transfer",
+                    "tranDescription": "Wire Transfer",
+                    "referenceNumber": "4242355265",
+                    "postDate": "May 25, 2024",
+                    "tranAmount": "24000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Wire Transfer",
+                    "tranDescription": "Wire Transfer",
+                    "referenceNumber": "4242355266",
+                    "postDate": "May 26, 2024",
+                    "tranAmount": "24000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Wire Transfer",
+                    "tranDescription": "Wire Transfer",
+                    "referenceNumber": "4242355267",
+                    "postDate": "May 27, 2024",
+                    "tranAmount": "24000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Wire Transfer",
+                    "tranDescription": "Wire Transfer",
+                    "referenceNumber": "4242355268",
+                    "postDate": "May 28, 2024",
+                    "tranAmount": "24000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Wire Transfer",
+                    "tranDescription": "Wire Transfer",
+                    "referenceNumber": "4242355269",
+                    "postDate": "May 29, 2024",
+                    "tranAmount": "24000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Wire Transfer",
+                    "tranDescription": "Wire Transfer",
+                    "referenceNumber": "4242355270",
+                    "postDate": "May 30, 2024",
+                    "tranAmount": "24000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Wire Transfer",
+                    "tranDescription": "Wire Transfer",
+                    "referenceNumber": "4242355271",
+                    "postDate": "May 31, 2024",
+                    "tranAmount": "24000",
+                    "creditDebit": "Credit"
+                }
+            ]
+        }
+    }
+}
