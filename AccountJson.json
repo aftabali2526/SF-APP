@@ -9,6 +9,7 @@
         {
           "externalId": "456789264",
           "accountNumber": "011000204029",
+          "lastFourDigits": "4029",
           "accountTitle": "Abdullah Khan",
           "category": "checkingAccount",
           "currencyLocalLocal": "AED",
@@ -20,6 +21,7 @@
         {
           "externalId": "456781428",
           "accountNumber": "011000204333",
+          "lastFourDigits": "4333",
           "accountTitle": "Abdullah Khan",
           "category": "savingAccount",
           "currencyLocal": "AED",
@@ -31,6 +33,7 @@
         {
           "externalId": "456783296",
           "depositId": "12548885",
+          "lastFourDigits": "8885",
           "depositAmount": "547855",
           "profitRate": "5.25",
           "currencyLocal": "AED",
@@ -42,6 +45,7 @@
         {
           "externalId": "456785493",
           "financeId": "58965585",
+          "lastFourDigits": "5585",
           "profitRate": "5.36",
           "maturityDate": "24-Dec-2023",
           "remainInstallment": "20",
@@ -57,7 +61,8 @@
           "balance": "69850.00",
           "openingDate": "24-Nov-2023",
           "category": "creditCardAccount",
-          "accountNumber":"011000204029",
+          "accountNumber":"4562858963258745",
+          "lastFourDigits": "8745",
           "creditCardNumber":"4562858963258745"
         }
       ]
