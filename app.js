@@ -263,6 +263,7 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
 
     
     if((externalID !== null && externalID !== undefined ) && externalID == "456781428"){
+        console.log('external ID 1: ' + this.externalID);
         fs.readFile('Account_details.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
