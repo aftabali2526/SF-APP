@@ -8,24 +8,25 @@
       "accountDetails": {
         "accountNumber": "011000204029",
         "accountTitle": "Abdullah Khan",
-        "category": "checking",
+        "category": "checkingAccount",
         "currency": "AED",
-        "openingDate": "01-Dec-2023",
-        "balance": "53650.00",
+        "openingDate": "6/25/2022",
+        "balance": "23650.00",
         "accountStatus": "ACTIVE",
         "currencyCode": "048",
         "currencyDecimals": "3",
-        "accountOfficerName": null,
+        "accountOfficerId": "252622",
         "accountOfficerEmail": null,
         "accountOfficerContactNo": null,
-        "debitAmount": null,
-        "creditAmount": null,
+        "debitAmount": "11825.00",
+        "creditAmount": "11825.00",
         "postingDate": null,
         "isDefaultAccount": null,
         "iban": "AE20ENBD013258888800001",
         "accountActualBalance": null,
-        "branchName": null,
-        "branchCode": "5"
+        "branchName": "SZR Branch",
+        "branchCode": "5",
+        "postingRestrict":"false"
       }
     }
   }

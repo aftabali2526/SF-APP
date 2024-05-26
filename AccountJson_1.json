@@ -7,6 +7,7 @@
     "body": {
       "checkingAccountsList": [
         {
+          "externalId": "456789123",
           "accountNumber": "033000204029",
           "accountTitle": "Ameera Khan",
           "category": "checkingAccount",
@@ -17,6 +18,7 @@
       ],
       "savingAccountsList": [
         {
+          "externalId": "456789584",
           "accountNumber": "044000204333",
           "accountTitle": "Ameera Khan",
           "category": "savingAccount",
@@ -27,6 +29,7 @@
       ],
       "tdrList": [
         {
+          "externalId": "456789147",
           "depositId": "45875558",
           "depositAmount": "65855",
           "profitRate": "5.00",
@@ -37,6 +40,7 @@
       ],
       "loanAccountsList": [
         {
+          "externalId": "456789627",
           "financeId": "58965585",
           "profitRate": "5.36",
           "maturityDate": "24-Dec-2023",
@@ -47,6 +51,7 @@
       ],
        "creditCardAccountList": [
         {
+          "externalId": "456789371",
           "accountTitle": "Ameera Khan",
           "status": "Active",
           "balance": "69850.00",

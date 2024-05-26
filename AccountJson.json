@@ -7,6 +7,7 @@
     "body": {
       "checkingAccountsList": [
         {
+          "externalId": "456789264",
           "accountNumber": "011000204029",
           "accountTitle": "Abdullah Khan",
           "category": "checkingAccount",
@@ -17,6 +18,7 @@
       ],
       "savingAccountsList": [
         {
+          "externalId": "456781428",
           "accountNumber": "011000204333",
           "accountTitle": "Abdullah Khan",
           "category": "savingAccount",
@@ -27,6 +29,7 @@
       ],
       "tdrList": [
         {
+          "externalId": "456783296",
           "depositId": "12548885",
           "depositAmount": "547855",
           "profitRate": "5.25",
@@ -37,6 +40,7 @@
       ],
       "loanAccountsList": [
         {
+          "externalId": "456785493",
           "financeId": "58965585",
           "profitRate": "5.36",
           "maturityDate": "24-Dec-2023",
@@ -47,11 +51,14 @@
       ],
       "creditCardAccountList": [
         {
+          "externalId": "456782543",
           "accountTitle": "Abdullah Khan",
           "status": "Active",
           "balance": "69850.00",
           "openingDate": "24-Nov-2023",
-          "category": "creditCardAccount"
+          "category": "creditCardAccount",
+          "accountNumber":"011000204029",
+          "creditCardNumber":"4562858963258745"
         }
       ]
     }

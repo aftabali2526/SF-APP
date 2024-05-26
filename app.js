@@ -194,7 +194,7 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
 app.post('/api/sf/getAccount', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
-    const { cif } = req.body;
+    const { cif, externalId } = req.body;
     console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
     if (!channelid || !userid || !password) {
@@ -206,7 +206,7 @@ app.post('/api/sf/getAccount', (req, res) => {
     }
 
     
-    if((cif !== null || cif !== undefined ) && cif == "4567893" ){
+    if((cif !== null && cif !== undefined ) && cif == "4567893" ){
         fs.readFile('AccountJson.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -215,7 +215,7 @@ app.post('/api/sf/getAccount', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
-    }else if((cif !== null || cif !== undefined ) && cif == "9632585" ){
+    }else if((cif !== null && cif !== undefined ) && cif == "9632585" ){
         fs.readFile('AccountJson_1.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -348,6 +348,45 @@ app.post('/api/sf/financialTransactions', (req, res) => {
     }
      
 });
+
+
+app.post('/api/sf/creditCardDetails', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { creditCardNumber } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!creditCardNumber) {
+        return res.status(400).json({ error: 'Missing required fields, type or value in request' });
+    }
+
+    
+    if(creditCardNumber !== null && creditCardNumber != undefined && creditCardNumber !== '' && creditCardNumber == "4562858963258745"){
+        fs.readFile('CreditCard_Details.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else {
+        fs.readFile('Error.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
+
 
 
 // Start the server
