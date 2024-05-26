@@ -284,7 +284,7 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
         fs.readFile('No_Result.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
-                res.status(500).json({ error: 'Internal Server Error' });
+                res.status(500).json({ error: 'No Result' });
                 return;
             }
           return  res.status(200).json(JSON.parse(data));
