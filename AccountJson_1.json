@@ -9,6 +9,7 @@
         {
           "externalId": "456789123",
           "accountNumber": "033000204029",
+          "lastFourDigits": "4029",
           "accountTitle": "Ameera Khan",
           "category": "checkingAccount",
           "currencyLocal": "AED",
@@ -20,6 +21,7 @@
         {
           "externalId": "456789584",
           "accountNumber": "044000204333",
+          "lastFourDigits": "4333",
           "accountTitle": "Ameera Khan",
           "category": "savingAccount",
           "currencyLocal": "AED",
@@ -31,6 +33,7 @@
         {
           "externalId": "456789147",
           "depositId": "45875558",
+          "lastFourDigits": "5558",
           "depositAmount": "65855",
           "profitRate": "5.00",
           "currencyLocal": "AED",
@@ -42,6 +45,7 @@
         {
           "externalId": "456789627",
           "financeId": "58965585",
+          "lastFourDigits": "5585",
           "profitRate": "5.36",
           "maturityDate": "24-Dec-2023",
           "remainInstallment": "20",
@@ -56,7 +60,10 @@
           "status": "Active",
           "balance": "69850.00",
           "openingDate": "24-Nov-2023",
-          "category": "creditCardAccount"
+          "category": "creditCardAccount",
+          "accountNumber":"5896214586325856",
+          "lastFourDigits": "5856",
+          "creditCardNumber":"5896214586325856"
         }
       ]
     }
