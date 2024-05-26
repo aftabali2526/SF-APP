@@ -5,7 +5,6 @@
     "httpStatus": "OK",
     "httpStatusCode": 200,
     "body": {
-      "accountDetails": {
         "accountNumber": "011000204029",
         "accountTitle": "Abdullah Khan",
         "category": "savingAccount",
@@ -27,7 +26,6 @@
         "branchName": "SZR Branch",
         "branchCode": "5",
         "postingRestrict":"false"
-      }
     }
   }
 }
