@@ -289,6 +289,24 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
+    }else if((externalID !== null && externalID !== undefined ) && externalID == "456785493"){
+        fs.readFile('CreditCard_Details.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else if((externalID !== null && externalID !== undefined ) && externalID == "456782543"){
+        fs.readFile('Tdr_Account_Details.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
     }else{
         fs.readFile('No_Result.json', 'utf8', (err, data) => {
             if (err) {
