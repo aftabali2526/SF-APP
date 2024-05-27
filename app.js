@@ -331,10 +331,6 @@ app.post('/api/sf/financialTransactions', (req, res) => {
         return res.status(400).json({ error: 'Missing header fields' });
     }
 
-    if (!accountNumber) {
-        return res.status(400).json({ error: 'Missing required fields, type or value in request' });
-    }
-
     
     if(accountNumber !== null && accountNumber != undefined && accountNumber !== '' && accountNumber == "011000204029"  && type !== null && type !== undefined &&  type !== '' && type == 'mini statement'){
         fs.readFile('mini-statement.json', 'utf8', (err, data) => {
@@ -363,7 +359,7 @@ app.post('/api/sf/financialTransactions', (req, res) => {
             }
             res.status(200).json(JSON.parse(data));
         });
-    }if(accountNumber !== null && accountNumber != undefined && fromDate !== null && fromDate !== undefined && toDate != null && toDate != undefined){
+    }else if(accountNumber !== null && accountNumber != undefined && accountNumber != '' && fromDate !== null && fromDate !== undefined && toDate != null && toDate != undefined){
         fs.readFile('mini-statement.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -372,16 +368,16 @@ app.post('/api/sf/financialTransactions', (req, res) => {
             }
             res.status(200).json(JSON.parse(data));
         });
-    }if(financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Loan Account' && type !== null && type !== undefined && type == 'all'){
-        fs.readFile('loan-transaction.json', 'utf8', (err, data) => {
+    }else if(financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Loan Account' && type !== null && type !== undefined && type == 'all'){
+        fs.readFile('loantransaction.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
                 return;
             }
-            res.status(200).json(JSON.parse(data));
+            return  res.status(200).json(JSON.parse(data));
         });
-    }if(financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Credit Card' && numberOfTransactions == '10'){
+    }else if(financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Credit Card' && numberOfTransactions == '10'){
         fs.readFile('Credit-Card.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
