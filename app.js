@@ -263,7 +263,6 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
 
     
     if((externalID !== null && externalID !== undefined ) && externalID == "456781428"){
-        console.log('external ID 1: ' +externalID);
         fs.readFile('Account_Details.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -272,8 +271,17 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
             }
           return  res.status(200).json(JSON.parse(data));
         });
-    }else if((externalID !== null && externalID !== undefined ) && externalID == "456789584"){
-        fs.readFile('Account_details_1', 'utf8', (err, data) => {
+    }else if((externalID !== null && externalID !== undefined ) && externalID == "456789264"){
+        fs.readFile('Checking_Account_Details.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }else if((externalID !== null && externalID !== undefined ) && externalID == "456783296"){
+        fs.readFile('Tdr_Account_Details.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });

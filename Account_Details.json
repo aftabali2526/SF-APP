@@ -5,7 +5,7 @@
     "httpStatus": "OK",
     "httpStatusCode": 200,
     "body": {
-        "accountNumber": "011000204029",
+        "accountNumber": "011000204333",
         "accountTitle": "Abdullah Khan",
         "category": "savingAccount",
         "currency": "AED",
@@ -21,7 +21,7 @@
         "creditAmount": "11825.00",
         "postingDate": null,
         "isDefaultAccount": null,
-        "iban": "AE20ENBD013258888800001",
+        "iban": "AE20ENBD013011000204333",
         "accountActualBalance": null,
         "branchName": "SZR Branch",
         "branchCode": "5",

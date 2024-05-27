@@ -1,0 +1,32 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Accounts results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+          "accountNumber": "011000204029",
+          "accountTitle": "Abdullah Khan",
+          "category": "checkingAccount",
+          "currency": "AED",
+          "openingDate": "6/25/2022",
+          "balance": "23650.00",
+          "accountStatus": "ACTIVE",
+          "currencyCode": "048",
+          "currencyDecimals": "2",
+          "accountOfficerId": "252622",
+          "accountOfficerEmail": null,
+          "accountOfficerContactNo": null,
+          "debitAmount": "11825.00",
+          "creditAmount": "11825.00",
+          "postingDate": null,
+          "isDefaultAccount": null,
+          "iban": "AE20ENBD013011000204029",
+          "accountActualBalance": null,
+          "branchName": "SZR Branch",
+          "branchCode": "5",
+          "postingRestrict":"false"
+      }
+    }
+  }
+  
