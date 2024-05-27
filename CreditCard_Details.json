@@ -5,7 +5,6 @@
     "httpStatus": "OK",
     "httpStatusCode": 200,
     "body": {
-      "creditCardDetails": {
         "cardNumber": "4562858963258745",
         "cardType": "Visa",
         "cardName": "Abdullah Khan",
@@ -20,7 +19,6 @@
         "cardCustNumber": "",
         "lastUpdateDate": "",
         "lastUpdateTime": ""
-      }
     }
   }
 }
