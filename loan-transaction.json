@@ -1,0 +1,68 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Transaction search results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "transactionList": [
+          {
+                    "paymentDate": "May 21, 2024",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                },
+                {
+                    "paymentDate": "April 21, 2024",
+                    "installingAmount": "50000",
+                    "outstandingAmount": "15000"
+                },
+                {
+                    "paymentDate": "March 22, 2024",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                },
+                {
+                    "paymentDate": "February 21, 2024",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                },
+                {
+                    "paymentDate": "January 21, 2024",
+                    "installingAmount": "25000",
+                    "outstandingAmount": "10000"
+                },
+                {
+                    "paymentDate": "December 21, 2023",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                },
+                {
+                    "paymentDate": "November 21, 2023",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                },
+                {
+                    "paymentDate": "October 21, 2023",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                },
+				{
+                    "paymentDate": "September 21, 2023",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                },
+                {
+                    "paymentDate": "August 21, 2023",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                },
+                {
+                    "paymentDate": "July 21, 2023",
+                    "installingAmount": "15000",
+                    "outstandingAmount": "5000"
+                }
+        ]
+      }
+    }
+  }
+  

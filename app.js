@@ -324,7 +324,7 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
 app.post('/api/sf/financialTransactions', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
-    const { accountNumber, fromDate, toDate,minAmount,maxAmount,numberOfTransactions,cardNumber, type } = req.body;
+    const { accountNumber, fromDate, toDate,minAmount,maxAmount,numberOfTransactions,cardNumber, type,financialRecordType } = req.body;
     console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
     if (!channelid || !userid || !password) {
@@ -365,6 +365,24 @@ app.post('/api/sf/financialTransactions', (req, res) => {
         });
     }if(accountNumber !== null && accountNumber != undefined && fromDate !== null && fromDate !== undefined && toDate != null && toDate != undefined){
         fs.readFile('mini-statement.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }if(financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Loan Account' && type !== null && type !== undefined && type == 'all'){
+        fs.readFile('loan-transaction.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }if(financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Credit Card' && numberOfTransactions == '10'){
+        fs.readFile('Credit-Card.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
