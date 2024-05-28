@@ -324,7 +324,7 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
 app.post('/api/sf/financialTransactions', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
-    const { accountNumber, fromDate, toDate,minAmount,maxAmount,numberOfTransactions,cardNumber, type,financialRecordType } = req.body;
+    const { externalId, fromDate, toDate,minAmount,maxAmount,numberOfTransactions,cardNumber, type,financialRecordType } = req.body;
     console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
     if (!channelid || !userid || !password) {
@@ -332,7 +332,7 @@ app.post('/api/sf/financialTransactions', (req, res) => {
     }
 
     
-    if(accountNumber !== null && accountNumber != undefined && accountNumber !== '' && accountNumber == "011000204029"  && type !== null && type !== undefined &&  type !== '' && type == 'mini statement'){
+    if(externalId !== null && externalId != undefined && externalId !== '' && (externalId == "456789264" || externalId == "456781428")  && type !== null && type !== undefined &&  type !== '' && type == 'mini statement'){
         fs.readFile('mini-statement.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -341,7 +341,7 @@ app.post('/api/sf/financialTransactions', (req, res) => {
             }
             res.status(200).json(JSON.parse(data));
         });
-    }else if(numberOfTransactions !== null && numberOfTransactions != undefined && numberOfTransactions !== '' && numberOfTransactions == '10' && accountNumber == "011000204029"){
+    }else if(numberOfTransactions !== null && numberOfTransactions != undefined && numberOfTransactions !== '' && numberOfTransactions == '10' && (externalId == "456789264" || externalId == "456781428")){
         fs.readFile('last-10.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -350,7 +350,7 @@ app.post('/api/sf/financialTransactions', (req, res) => {
             }
             res.status(200).json(JSON.parse(data));
         });
-    }else if(numberOfTransactions !== null && numberOfTransactions != undefined && numberOfTransactions !== '' && numberOfTransactions == '50' && accountNumber == "011000204029"){
+    }else if(numberOfTransactions !== null && numberOfTransactions != undefined && numberOfTransactions !== '' && numberOfTransactions == '50' && (externalId == "456789264" || externalId == "456781428")){
         fs.readFile('last-50.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
