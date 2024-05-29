@@ -359,7 +359,7 @@ app.post('/api/sf/financialTransactions', (req, res) => {
             }
             res.status(200).json(JSON.parse(data));
         });
-    }else if(accountNumber !== null && accountNumber != undefined && accountNumber != '' && fromDate !== null && fromDate !== undefined && toDate != null && toDate != undefined){
+    }else if(externalId !== null && externalId != undefined && externalId != '' && fromDate !== null && fromDate !== undefined && toDate != null && toDate != undefined){
         fs.readFile('mini-statement.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
