@@ -359,15 +359,6 @@ app.post('/api/sf/financialTransactions', (req, res) => {
             }
             res.status(200).json(JSON.parse(data));
         });
-    }else if(externalId !== null && externalId != undefined && externalId != '' && fromDate !== null && fromDate !== undefined && toDate != null && toDate != undefined){
-        fs.readFile('mini-statement.json', 'utf8', (err, data) => {
-            if (err) {
-                console.error(err);
-                res.status(500).json({ error: 'Internal Server Error' });
-                return;
-            }
-            res.status(200).json(JSON.parse(data));
-        });
     }else if(financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Loan Account' && type !== null && type !== undefined && type == 'all'){
         fs.readFile('loantransaction.json', 'utf8', (err, data) => {
             if (err) {
@@ -377,7 +368,7 @@ app.post('/api/sf/financialTransactions', (req, res) => {
             }
             return  res.status(200).json(JSON.parse(data));
         });
-    }else if(financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Credit Card' && numberOfTransactions == '10'){
+    }else if(externalId !== null && externalId != undefined && externalId !== '' && (externalId == "456782543" || externalId == "456782543") && financialRecordType !== null && financialRecordType !== undefined && financialRecordType == 'Credit Card' && numberOfTransactions == '10'){
         fs.readFile('Credit-Card.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
