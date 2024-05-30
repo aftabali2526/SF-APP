@@ -13,8 +13,9 @@
           "accountTitle": "Abdullah Khan",
           "category": "checkingAccount",
           "currencyLocalLocal": "AED",
-          "openingDate": "25-Dec-2023",
-          "balance": "23650.00"
+          "openingDate": "12/25/2023",
+          "balance": "23650.00",
+          "status": "Active"
         }
       ],
       "savingAccountsList": [
@@ -26,7 +27,8 @@
           "category": "savingAccount",
           "currencyLocal": "AED",
           "openingDate": "24-Nov-2023",
-          "balance": "69850.00"
+          "balance": "69850.00",
+          "status": "Active"
         }
       ],
       "tdrList": [
@@ -39,7 +41,8 @@
           "profitRate": "5.25",
           "currencyLocal": "AED",
           "startDate": "24-Dec-2023",
-          "category": "tdrAccount"
+          "category": "tdrAccount",
+          "status": "Active"
         }
       ],
       "loanAccountsList": [
@@ -52,7 +55,36 @@
           "maturityDate": "24-Dec-2023",
           "remainInstallment": "20",
           "paymentAmount": "521",
-          "category": "loanAccount"
+          "category": "loanAccount",
+          "status": "Active"
+        }
+      ],
+      "autoLoanAccountsList": [
+        {
+          "externalId": "456785493",
+          "financeId": "58965585",
+          "accountTitle": "Abdullah Khan",
+          "lastFourDigits": "5585",
+          "profitRate": "5.36",
+          "maturityDate": "24-Dec-2023",
+          "remainInstallment": "20",
+          "paymentAmount": "521",
+          "category": "autoloanAccount",
+          "status": "Active"
+        }
+      ],
+      "mortgageAccountsList": [
+        {
+          "externalId": "456785493",
+          "financeId": "58965585",
+          "accountTitle": "Abdullah Khan",
+          "lastFourDigits": "5585",
+          "profitRate": "5.36",
+          "maturityDate": "24-Dec-2023",
+          "remainInstallment": "20",
+          "paymentAmount": "521",
+          "category": "mortgageAccount",
+          "status": "Active"
         }
       ],
       "creditCardAccountList": [
