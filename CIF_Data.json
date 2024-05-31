@@ -46,6 +46,10 @@
           "mailingCountry":"AE",
           "accountOfficer":"252622",
           "externalId": "456586952",
+          "mobileBanking": true,
+          "internetBanking": true,
+          "eStatement": false,
+          "sms":true,
           "availableBalance":{
              "amount":"518.585",
              "currency":"AED",
