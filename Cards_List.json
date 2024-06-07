@@ -8,8 +8,8 @@
         "cardsList": [
           {
             "cardNumber": "4155333322221111",
-            "cardType": "Debit Card",
-            "cardName": "CardyEx",
+            "cardType": "Debit",
+            "cardName": "MasterCard Platinum",
             "status": "Hot",
             "expiryMonth": "10",
             "expiryYear": "25",
@@ -19,8 +19,8 @@
           },
           {
             "cardNumber": "4177333322227777",
-            "cardType": "MasterCard Platinum",
-            "cardName": "",
+            "cardType": "Debit",
+            "cardName": "Visa Platinum",
             "status": "Warm",
             "expiryMonth": "11",
             "expiryYear": "27",
@@ -30,7 +30,7 @@
           },
           {
             "cardNumber": "4199333322229999",
-            "cardType": "Credit Card",
+            "cardType": "Credit",
             "cardName": "Visa Signature",
             "status": "Cold",
             "expiryMonth": "09",
