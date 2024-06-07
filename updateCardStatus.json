@@ -1,0 +1,15 @@
+{
+    "data": {
+      "code":1,
+      "message":"Card status updated successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+          "cardNumber": "4587525855569852",
+          "oldStatus":"Cold",
+          "newStatus":"Warm",
+          "externalId":"159263487"
+      }
+    }
+  }
+  
