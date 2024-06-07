@@ -8,7 +8,7 @@
         "cardsList": [
           {
             "cardNumber": "4155333322221111",
-            "cardType": "Debit",
+            "cardType": "Debit Card",
             "cardName": "MasterCard Platinum",
             "status": "Hot",
             "expiryMonth": "10",
@@ -19,7 +19,7 @@
           },
           {
             "cardNumber": "4177333322227777",
-            "cardType": "Debit",
+            "cardType": "Debit Card",
             "cardName": "Visa Platinum",
             "status": "Warm",
             "expiryMonth": "11",
@@ -30,7 +30,7 @@
           },
           {
             "cardNumber": "4199333322229999",
-            "cardType": "Credit",
+            "cardType": "Credit Card",
             "cardName": "Visa Signature",
             "status": "Cold",
             "expiryMonth": "09",
