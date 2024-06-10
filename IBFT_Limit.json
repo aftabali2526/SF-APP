@@ -1,0 +1,20 @@
+{
+    "data": {
+      "code": 1,
+      "message": "IBFT limit fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "ibftLimitDetails": 
+          {
+                    "dailyAvailableLimit": "PKR 2,00,000",
+                    "dailyLimit": "PKR 2,50,000",
+                    "monthlyAvailableLimit": "PKR 4,50,000",
+                    "monthlyLimit": "PKR 5,00,000",
+                    "perTransactionMaxLimit": "PKR 50,000",
+                    "noOfTransactionMaxLimit": "5"
+          }
+      }
+    }
+  }
+  
