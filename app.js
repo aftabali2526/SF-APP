@@ -526,7 +526,7 @@ app.post('/api/sf/getCards', (req, res) => {
 app.post('/api/sf/ibftLimit', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
-    const { accountNumber} = req.body;
+    const { cif} = req.body;
     console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
     if (!channelid || !userid || !password) {
@@ -538,7 +538,7 @@ app.post('/api/sf/ibftLimit', (req, res) => {
     }
 
     
-    if(accountNumber !== null && accountNumber != undefined && accountNumber !== '' && accountNumber == '4587525855569852'){
+    if(cif !== null && cif != undefined && cif !== '' && (cif == '4567893' || cif == '9632585')){
         fs.readFile('IBFT_Limit.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
