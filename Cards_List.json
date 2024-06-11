@@ -19,7 +19,8 @@
           "validUntil": "11/09/24",
           "monthlyLimit": "50000",
           "remainingLimit": "10000",
-          "cardProduct": "Gold"
+          "cardProduct": "Gold",
+          "lastFourDigits": "1111"
         },
         {
           "cardNumber": "4177333322227777",
@@ -34,7 +35,8 @@
           "validUntil": "05/11/27",
           "monthlyLimit": "70000",
           "remainingLimit": "20000",
-          "cardProduct": "Platinum"
+          "cardProduct": "Platinum",
+          "lastFourDigits": "7777"
         },
         {
           "cardNumber": "4199333322229999",
@@ -49,7 +51,8 @@
           "validUntil": "10/07/28",
           "monthlyLimit": "90000",
           "remainingLimit": "30000",
-          "cardProduct": "Silver"
+          "cardProduct": "Silver",
+          "lastFourDigits": "9999"
         }
       ]
     }
