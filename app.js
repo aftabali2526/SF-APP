@@ -461,7 +461,7 @@ app.post('/api/sf/updateCardStatus', (req, res) => {
     }
 
     
-    if(cardNumber !== null && cardNumber != undefined && cardNumber !== '' && cardNumber == '4587525855569852' && externalId == '23232323'){
+    if(cardNumber !== null && cardNumber != undefined && cardNumber !== '' && (cardNumber == '7777' || cardNumber == '1111' || cardNumber == '9999') && externalId == '12121212'){
         fs.readFile('CreditCard_Details.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
