@@ -5,7 +5,7 @@
       "httpStatus": "OK",
       "httpStatusCode": 200,
       "body": {
-        "customerData": {
+        "customerAccount": {
           "cif": "4567893",
           "fullName": "Abdullah Khan",
           "firstName": "Abdullah",
@@ -52,7 +52,7 @@
           "eStatement": false,
           "sms": true
         },
-        "financialAccounts": {
+        "customerFinancialAccounts": {
           "checkingAccountsList": [
             {
               "externalId": "456789264",
@@ -149,7 +149,7 @@
             }
           ]
         },
-        "cards": [
+        "customerCards": [
           {
             "cardNumber": "4155333322221111",
             "cardType": "Debit Card",
