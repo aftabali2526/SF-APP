@@ -526,19 +526,19 @@ app.post('/api/sf/getCards', (req, res) => {
 app.post('/api/sf/ibftLimit', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
-    const { cif} = req.body;
+    const { externalId } = req.body;
     console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
     if (!channelid || !userid || !password) {
         return res.status(400).json({ error: 'Missing header fields' });
     }
 
-    if (!cardNumber) {
+    if (!externalId) {
         return res.status(400).json({ error: 'Missing required fields, cardNumber in request' });
     }
 
     
-    if(cif !== null && cif != undefined && cif !== '' && (cif == '4567893' || cif == '9632585')){
+    if(externalId !== null && externalId != undefined && externalId !== '' && (externalId == '456781428' || externalId == '456789264')){
         fs.readFile('IBFT_Limit.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
