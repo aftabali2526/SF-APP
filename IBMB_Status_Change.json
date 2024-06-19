@@ -1,0 +1,14 @@
+{
+    "data": {
+      "code":1,
+      "message":"SMS banking status updated successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+          "cif": "4567893",
+          "oldStatus":"UnBlocked",
+          "newStatus":"Blocked",
+          "externalId":"456586951"
+      }
+    }
+  }

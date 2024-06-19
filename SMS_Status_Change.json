@@ -1,0 +1,14 @@
+{
+    "data": {
+      "code":1,
+      "message":"SMS banking status updated successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+          "phoneNumber": "0554538343",
+          "oldStatus":"Active",
+          "newStatus":"InActive",
+          "externalId":"456586952"
+      }
+    }
+  }
