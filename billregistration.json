@@ -1,0 +1,9 @@
+{
+    "data": {
+      "code":1,
+      "message":"Bill Payment Registered Successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body":  {}
+    }
+  }
