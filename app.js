@@ -677,6 +677,122 @@ app.post('/api/sf/updateSMSStatus', (req, res) => {
 });
 
 
+
+app.post('/api/sf/chequebooklist', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { externalId } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!externalId) {
+        return res.status(400).json({ error: 'Missing required fields, cardNumber in request' });
+    }
+
+    
+    if(externalId !== null && externalId != undefined && externalId !== '' &&  (externalId == '456789264' || externalId == '456781428')){
+        fs.readFile('chequbooklist.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else {
+        fs.readFile('Error.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
+
+
+app.post('/api/sf/newchequebook', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { externalId } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!externalId) {
+        return res.status(400).json({ error: 'Missing required fields, cardNumber in request' });
+    }
+
+    
+    if(externalId !== null && externalId != undefined && externalId !== '' &&   (externalId == '456789264' || externalId == '456781428')){
+        fs.readFile('newchequebook.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else {
+        fs.readFile('Error.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
+
+
+app.post('/api/sf/updatechequebook', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { externalId } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!externalId) {
+        return res.status(400).json({ error: 'Missing required fields, cardNumber in request' });
+    }
+
+    
+    if(externalId !== null && externalId != undefined && externalId !== '' &&   (externalId == '456586951' || externalId == '456586952' || externalId == '456586953')){
+        fs.readFile('updatechequebook.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else {
+        fs.readFile('Error.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
+
+
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

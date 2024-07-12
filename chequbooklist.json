@@ -1,0 +1,34 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Accounts results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "chequebooklist": [
+    {
+    "chequeBookNumber": "0554538343",
+    "numberOfPages": "10",
+    "cif": "4567893",
+    "newStatus": "InActive",
+    "externalId": 456586951
+  },
+  {
+    "chequeBookNumber": "0554538343",
+    "numberOfPages": "25",
+    "cif": "4567893",
+    "newStatus": "InActive",
+    "externalId": 456586952
+  },
+  {
+    "isNewChequeBookRequest": true,
+    "numberOfPages": "50",
+    "cif": "4567893",
+    "newStatus": "InActive",
+    "externalId": 456586953
+  }
+  ]
+      }
+    }
+  }
+  
