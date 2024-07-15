@@ -14,14 +14,14 @@
     "externalId": 456586951
   },
   {
-    "chequeBookNumber": "0554538343",
+    "chequeBookNumber": "0554538344",
     "numberOfPages": "25",
     "cif": "4567893",
     "newStatus": "InActive",
     "externalId": 456586952
   },
   {
-    "isNewChequeBookRequest": true,
+    "chequeBookNumber": "0554538345",
     "numberOfPages": "50",
     "cif": "4567893",
     "newStatus": "InActive",
