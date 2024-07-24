@@ -833,19 +833,19 @@ app.post('/api/sf/sendotp', (req, res) => {
 app.post('/api/sf/billregistration', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
-    const { consumerCode } = req.body;
+    const { consumerNo } = req.body;
     console.log(JSON.stringify(req.headers));
     // Validate request data (for demonstration purposes)
     if (!channelid || !userid || !password) {
         return res.status(400).json({ error: 'Missing header fields' });
     }
 
-    if (!consumerCode) {
+    if (!consumerNo) {
         return res.status(400).json({ error: 'Missing required fields, cardNumber in request' });
     }
 
     
-    if(consumerCode !== null && consumerCode != undefined && consumerCode !== '' &&   consumerCode == '31583784' ){
+    if(consumerNo !== null && consumerNo != undefined && consumerNo !== '' &&   (consumerNo == '31583784' || consumerNo == '0554538343' )){
         fs.readFile('billregistration.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
