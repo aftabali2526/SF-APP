@@ -982,6 +982,42 @@ app.post('/api/sf/sendSMSNotification', (req, res) => {
 });
 
 
+app.post('/api/sf/chargesDeduction', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { bCharges } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!bCharges) {
+        return res.status(400).json({ error: 'Missing required fields, cardNumber in request' });
+    }
+
+    
+    if(bCharges !== null && bCharges != undefined && bCharges !== ''){
+        fs.readFile('SMS_Notification.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else {
+        fs.readFile('Error.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
 
 
 // Start the server
