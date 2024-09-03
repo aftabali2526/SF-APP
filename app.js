@@ -998,7 +998,7 @@ app.post('/api/sf/chargesDeduction', (req, res) => {
 
     
     if(bCharges !== null && bCharges != undefined && bCharges !== ''){
-        fs.readFile('SMS_Notification.json', 'utf8', (err, data) => {
+        fs.readFile('charges_deduction.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
