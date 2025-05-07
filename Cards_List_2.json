@@ -1,0 +1,60 @@
+{
+  "data": {
+    "code": 1,
+    "message": "Accounts results fetched successfully!",
+    "httpStatus": "OK",
+    "httpStatusCode": 200,
+    "body": {
+      "cardsList": [
+        {
+          "cardNumber": "4155333322221111",
+          "cardType": "Debit Card",
+          "cardName": "MasterCard Platinum",
+          "status": "Hot",
+          "expiryMonth": "10",
+          "expiryYear": "25",
+          "isActive": true,
+          "finAcctExternalId": "456789264",
+          "externalId": "12121212",
+          "validUntil": "11/09/24",
+          "monthlyLimit": "50000",
+          "remainingLimit": "10000",
+          "cardProduct": "Gold",
+          "lastFourDigits": "1111"
+        },
+        {
+          "cardNumber": "4177333322227777",
+          "cardType": "Debit Card",
+          "cardName": "Visa Platinum",
+          "status": "Warm",
+          "expiryMonth": "11",
+          "expiryYear": "27",
+          "isActive": false,
+          "finAcctExternalId": "456781428",
+          "externalId": "23232323",
+          "validUntil": "05/11/27",
+          "monthlyLimit": "70000",
+          "remainingLimit": "20000",
+          "cardProduct": "Platinum",
+          "lastFourDigits": "7777"
+        },
+        {
+          "cardNumber": "4199333322229999",
+          "cardType": "Credit Card",
+          "cardName": "Visa Signature",
+          "status": "Cold",
+          "expiryMonth": "09",
+          "expiryYear": "24",
+          "isActive": true,
+          "finAcctExternalId": "456782543",
+          "externalId": "34343434",
+          "validUntil": "10/07/28",
+          "monthlyLimit": "90000",
+          "remainingLimit": "30000",
+          "cardProduct": "Silver",
+          "lastFourDigits": "9999"
+        }
+      ]
+    }
+  }
+}

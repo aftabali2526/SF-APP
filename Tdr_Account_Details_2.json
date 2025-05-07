@@ -1,0 +1,21 @@
+{
+    "data": {
+      "code": 1,
+      "message": "TDR results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "accountOfficer":"252633",
+        "externalId": "456783297",
+        "depositId":"12548885",
+        "currency":"AED",
+        "depositAmount":"547855",
+        "profitRate":"5.25",
+        "dealDate":"24-Dec-2023",
+        "dealSector":"",
+        "maturityDate":"25-Dec-2028",
+        "startDate":"25-Dec-2023"
+      }
+    }
+  }
+  

@@ -1,0 +1,20 @@
+{
+    "data": {
+      "code": 1,
+      "message": "IBFT limit fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "ibftLimitDetails": 
+          {
+                    "dailyAvailableLimit": "AED 2,00,000",
+                    "dailyLimit": "AED 2,50,000",
+                    "monthlyAvailableLimit": "AED 4,50,000",
+                    "monthlyLimit": "AED 5,00,000",
+                    "perTransactionMaxLimit": "AED 50,000",
+                    "noOfTransactionMaxLimit": "5"
+          }
+      }
+    }
+  }
+  

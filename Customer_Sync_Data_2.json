@@ -1,0 +1,204 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Accounts results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "customerAccount": {
+          "cif": "1357924",
+          "fullName": "John Carter",
+          "firstName": "John",
+          "lastName": "Carter",
+          "middleName": null,
+          "fatherName": "Jason Carter",
+          "matherName": "Lisa",
+          "nationalId": "789632541258523",
+          "nationalIdExpiryDate": "June 25, 2030",
+          "dob": "Jan 01, 1995",
+          "gender": "M",
+          "creationDate": "June 15, 2023",
+          "ntn": "258741",
+          "cityOfBirth": "Dubai",
+          "countryOfBirth": "AE",
+          "residenceAddress": "Building - Bin Juma 4, Flat 610, Al Nahda 1, Dubai",
+          "officeAddress": "Latifa Tower SZR, Office 3404, Dubai",
+          "email": "adbullah.khan@gmail.com",
+          "passportNumber": "F454313",
+          "passportExpiryDate": "Aug 12, 2028",
+          "customerSegment": "1001",
+          "nationality": "AE",
+          "salary": "25000",
+          "phoneNumber": "0554538343",
+          "customerSegmentation": "Gold",
+          "loyaltyPoint": "1400",
+          "customerSatisfaction": "Satisfied",
+          "npsScore": "8",
+          "isSalary": "true",
+          "isDelinquent": "true",
+          "salutation": "Mr.",
+          "branchCode": "1001",
+          "branchName": "SZR Branch",
+          "mailingAddress": "Al Nahda 1, Dubai",
+          "mailingStreet": "3404 Adroit Technology, Latifa Tower, SZR",
+          "mailingState": "Dubai",
+          "mailingCity": "Dubai",
+          "mailingZipCode": "370627",
+          "mailingCountry": "AE",
+          "accountOfficer": "252622",
+          "externalId": "456586952",
+          "mobileBanking": true,
+          "internetBanking": true,
+          "eStatement": false,
+          "sms": true
+        },
+        "customerFinancialAccounts": {
+          "checkingAccountsList": [
+            {
+              "externalId": "456789265",
+              "accountNumber": "011000204029",
+              "lastFourDigits": "4029",
+              "accountTitle": "John Carter",
+              "category": "checkingAccount",
+              "currencyLocalLocal": "AED",
+              "openingDate": "12/25/2023",
+              "balance": "20000.00",
+              "status": "Active"
+            }
+          ],
+          "savingAccountsList": [
+            {
+              "externalId": "456781429",
+              "accountNumber": "011000204333",
+              "lastFourDigits": "4333",
+              "accountTitle": "John Carter",
+              "category": "savingAccount",
+              "currencyLocal": "AED",
+              "openingDate": "24-Nov-2023",
+              "balance": "3000.00",
+              "status": "Active"
+            }
+          ],
+          "tdrList": [
+            {
+              "externalId": "456783295",
+              "depositId": "12548885",
+              "accountTitle": "John Carter",
+              "lastFourDigits": "8885",
+              "depositAmount": "6000",
+              "profitRate": "5.25",
+              "currencyLocal": "AED",
+              "startDate": "24-Dec-2023",
+              "category": "tdrAccount",
+              "status": "Active"
+            }
+          ],
+          "loanAccountsList": [
+            {
+              "externalId": "456785492",
+              "financeId": "58965585",
+              "accountTitle": "John Carter",
+              "lastFourDigits": "5585",
+              "profitRate": "6.0",
+              "maturityDate": "24-Dec-2023",
+              "remainInstallment": "19",
+              "paymentAmount": "700",
+              "category": "loanAccount",
+              "status": "Active"
+            }
+          ],
+          "autoLoanAccountsList": [
+            {
+              "externalId": "456781474",
+              "financeId": "58965585",
+              "accountTitle": "John Carter",
+              "lastFourDigits": "5585",
+              "profitRate": "3.33",
+              "maturityDate": "24-Dec-2023",
+              "remainInstallment": "18",
+              "paymentAmount": "521",
+              "category": "autoloanAccount",
+              "status": "Active"
+            }
+          ],
+          "mortgageAccountsList": [
+            {
+              "externalId": "456786952",
+              "financeId": "58965585",
+              "accountTitle": "Abdullah Khan",
+              "lastFourDigits": "5585",
+              "profitRate": "2.50",
+              "maturityDate": "24-Dec-2023",
+              "remainInstallment": "15",
+              "paymentAmount": "521",
+              "category": "mortgageAccount",
+              "status": "Active"
+            }
+          ],
+          "creditCardAccountList": [
+            {
+              "externalId": "456782544",
+              "accountTitle": "Abdullah Khan",
+              "status": "Active",
+              "balance": "4500.00",
+              "openingDate": "24-Nov-2023",
+              "category": "creditCardAccount",
+              "accountNumber": "4562858963258745",
+              "lastFourDigits": "8745",
+              "creditCardNumber": "4562858963258745"
+            }
+          ]
+        },
+        "customerCards": [
+          {
+            "cardNumber": "4155333322221111",
+            "cardType": "Debit Card",
+            "cardName": "MasterCard Platinum",
+            "status": "Cold",
+            "expiryMonth": "10",
+            "expiryYear": "26",
+            "isActive": true,
+            "finAcctExternalId": "456789264",
+            "externalId": "12121212",
+            "validUntil": "11/09/24",
+            "monthlyLimit": "50000",
+            "remainingLimit": "10000",
+            "cardProduct": "Gold",
+            "lastFourDigits": "1111"
+          },
+          {
+            "cardNumber": "4177333322227777",
+            "cardType": "Debit Card",
+            "cardName": "Visa Platinum",
+            "status": "Warm",
+            "expiryMonth": "11",
+            "expiryYear": "28",
+            "isActive": false,
+            "finAcctExternalId": "456781428",
+            "externalId": "23232323",
+            "validUntil": "05/11/27",
+            "monthlyLimit": "70000",
+            "remainingLimit": "20000",
+            "cardProduct": "Platinum",
+            "lastFourDigits": "7777"
+          },
+          {
+            "cardNumber": "4199333322229999",
+            "cardType": "Credit Card",
+            "cardName": "Visa Signature",
+            "status": "Cold",
+            "expiryMonth": "09",
+            "expiryYear": "29",
+            "isActive": true,
+            "finAcctExternalId": "456782543",
+            "externalId": "34343434",
+            "validUntil": "10/07/28",
+            "monthlyLimit": "90000",
+            "remainingLimit": "30000",
+            "cardProduct": "Silver",
+            "lastFourDigits": "9999"
+          }
+        ]
+      }
+    }
+  }

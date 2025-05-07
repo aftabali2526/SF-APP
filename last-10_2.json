@@ -1,0 +1,103 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Transaction search results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "transactionList": [
+          {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Insurance",
+                    "tranDescription": "Car Insurance",
+                    "referenceNumber": "4242355254",
+                    "postDate": "May 14, 2024",
+                    "tranAmount": "7000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Refund",
+                    "tranDescription": "Tax Refund",
+                    "referenceNumber": "4242355255",
+                    "postDate": "May 15, 2024",
+                    "tranAmount": "3000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Subscription",
+                    "tranDescription": "Magazine",
+                    "referenceNumber": "4242355256",
+                    "postDate": "May 16, 2024",
+                    "tranAmount": "2000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Entertainment",
+                    "tranDescription": "Movie Ticket",
+                    "referenceNumber": "4242355257",
+                    "postDate": "May 17, 2024",
+                    "tranAmount": "1000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Savings",
+                    "tranDescription": "Savings Deposit",
+                    "referenceNumber": "4242355258",
+                    "postDate": "May 18, 2024",
+                    "tranAmount": "5000",
+                    "creditDebit": "Credit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Cash Withdrawal",
+                    "tranDescription": "ATM Withdrawal",
+                    "referenceNumber": "4242355259",
+                    "postDate": "May 19, 2024",
+                    "tranAmount": "4000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Charity",
+                    "tranDescription": "Donation",
+                    "referenceNumber": "4242355260",
+                    "postDate": "May 20, 2024",
+                    "tranAmount": "2000",
+                    "creditDebit": "Debit"
+                },
+				{
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Travel",
+                    "tranDescription": "Flight Ticket",
+                    "referenceNumber": "4242355261",
+                    "postDate": "May 21, 2024",
+                    "tranAmount": "15000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Mortgage Payment",
+                    "tranDescription": "Home Loan",
+                    "referenceNumber": "4242355262",
+                    "postDate": "May 22, 2024",
+                    "tranAmount": "25000",
+                    "creditDebit": "Debit"
+                },
+                {
+                    "accountNumber": "011000204029",
+                    "valueDescription": "Investment",
+                    "tranDescription": "Stock Purchase",
+                    "referenceNumber": "4242355263",
+                    "postDate": "May 23, 2024",
+                    "tranAmount": "20000",
+                    "creditDebit": "Debit"
+                }
+        ]
+      }
+    }
+  }
+  
