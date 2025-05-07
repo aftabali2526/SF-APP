@@ -7,7 +7,7 @@
     "body": {
         "cardNumber": "4562858963258746",
         "cardType": "Visa",
-        "cardName": "John Carter",
+        "cardName": "Austin Morgan",
         "cardProduct": "",
         "cardLimit": "20000.00",
         "availBal": "15000.00",
@@ -15,7 +15,7 @@
         "cardStatus": "Active",
         "expMonths": "06",
         "expYear": "2028",
-        "embossName": "John Carter",
+        "embossName": "Austin Morgan",
         "cardCustNumber": "",
         "lastUpdateDate": "",
         "lastUpdateTime": ""

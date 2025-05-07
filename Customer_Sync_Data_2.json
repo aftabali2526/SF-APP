@@ -7,9 +7,9 @@
       "body": {
         "customerAccount": {
           "cif": "1357924",
-          "fullName": "John Carter",
-          "firstName": "John",
-          "lastName": "Carter",
+          "fullName": "Austin Morgan",
+          "firstName": "Austin",
+          "lastName": "Morgan",
           "middleName": null,
           "fatherName": "Jason Carter",
           "matherName": "Lisa",
@@ -58,7 +58,7 @@
               "externalId": "456789265",
               "accountNumber": "011000204029",
               "lastFourDigits": "4029",
-              "accountTitle": "John Carter",
+              "accountTitle": "Austin Morgan",
               "category": "checkingAccount",
               "currencyLocalLocal": "AED",
               "openingDate": "12/25/2023",
@@ -71,7 +71,7 @@
               "externalId": "456781429",
               "accountNumber": "011000204333",
               "lastFourDigits": "4333",
-              "accountTitle": "John Carter",
+              "accountTitle": "Austin Morgan",
               "category": "savingAccount",
               "currencyLocal": "AED",
               "openingDate": "24-Nov-2023",
@@ -83,7 +83,7 @@
             {
               "externalId": "456783295",
               "depositId": "12548885",
-              "accountTitle": "John Carter",
+              "accountTitle": "Austin Morgan",
               "lastFourDigits": "8885",
               "depositAmount": "6000",
               "profitRate": "5.25",
@@ -97,7 +97,7 @@
             {
               "externalId": "456785492",
               "financeId": "58965585",
-              "accountTitle": "John Carter",
+              "accountTitle": "Austin Morgan",
               "lastFourDigits": "5585",
               "profitRate": "6.0",
               "maturityDate": "24-Dec-2023",
@@ -111,7 +111,7 @@
             {
               "externalId": "456781474",
               "financeId": "58965585",
-              "accountTitle": "John Carter",
+              "accountTitle": "Austin Morgan",
               "lastFourDigits": "5585",
               "profitRate": "3.33",
               "maturityDate": "24-Dec-2023",

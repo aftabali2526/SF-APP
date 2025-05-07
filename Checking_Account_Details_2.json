@@ -6,7 +6,7 @@
       "httpStatusCode": 200,
       "body": {
           "accountNumber": "011000204020",
-          "accountTitle": "John Carter",
+          "accountTitle": "Austin Morgan",
           "category": "checkingAccount",
           "currency": "AED",
           "openingDate": "6/25/2022",
