@@ -1,0 +1,71 @@
+{
+   "data":{
+      "code":1,
+      "message":"Customer search results fetched successfully!",
+      "httpStatus":"OK",
+      "httpStatusCode":200,
+      "body":{
+         "cif":"1357924",
+         "fullName":"John Carter",
+         "firstName":"John",
+         "lastName":"Carter",
+         "middleName":null,
+         "fatherName":"Jason Carter",
+         "matherName":"Lisa",
+         "nationalId":"789582569854783",
+         "nationalIdExpiryDate":"8/15/2026",
+         "dob":"5/26/1989",
+         "gender":"M",
+         "creationDate":"5/26/2022",
+         "ntn":"258748",
+         "cityOfBirth":"Sharja",
+         "countryOfBirth":"AE",
+         "residenceAddress":"Building - Burj Tower, Flat 610, Al Nahda, Sharja",
+         "officeAddress":"Nahda Tower Al Nahda, Office 2504, Sharja",
+         "email":"john.carter@gmail.com",
+         "passportNumber":"F458756",
+         "passportExpiryDate":"7/23/2029",
+         "customerSegment":"1001",
+         "nationality":"AE",
+         "salary":"30000",
+         "phoneNumber":"0586958423",
+         "customerSegmentation":"Platinum",
+         "loyaltyPoint":"1500",
+         "customerSatisfaction":"Satisfied",
+         "npsScore":"10",
+         "isSalary":"false",
+         "isDelinquent":"true",
+         "salutation":"Mr.",
+         "branchCode":"1001",
+         "branchName":"Al Nahda Sharja",
+         "mailingAddress":"Al Nahda 1, Dubai",
+         "mailingStreet":"Bin Juma 6, Al Nahda 1",
+         "mailingState":"Dubai",
+         "mailingCity":"Dubai",
+         "mailingZipCode":"370627",
+         "mailingCountry":"AE",
+         "accountOfficer":"252633",
+         "externalId": "456148524",
+         "mobileBanking": true,
+         "internetBanking": true,
+         "eStatement": false,
+         "sms":true,
+         "availableBalance":{
+            "amount":"596.585",
+            "currency":"AED",
+            "localeFormattedAmount":null
+         },
+         "Legal_ID":[
+            {
+               "Legal_ID_Type":"Passport",
+               "Legal_ID_No":"F458776"
+            },
+            {
+               "Legal_ID_Type":"NationalID",
+               "Legal_ID_No":"789582569854786"
+            }
+         ],
+         "intialDepositAmount":"3652.00"
+      }
+   }
+}

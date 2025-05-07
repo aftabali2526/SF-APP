@@ -1,0 +1,12 @@
+{
+    "data": {
+      "code":1,
+      "message":"Cheque Book Request status updated successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+          "cif": "1357924",
+          "externalId":"456586952"
+      }
+    }
+  }
