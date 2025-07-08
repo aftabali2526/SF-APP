@@ -1037,7 +1037,7 @@ app.post('/api/sf/sendotp', (req, res) => {
     }
 
     
-    if(mobileNumber !== null && mobileNumber != undefined && mobileNumber !== '' &&   mobileNumber == '0554538343' ){
+    if(mobileNumber !== null && mobileNumber != undefined && mobileNumber !== ''){
         fs.readFile('sendotp.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
