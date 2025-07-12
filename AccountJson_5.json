@@ -1,0 +1,105 @@
+{
+  "data": {
+    "code": 1,
+    "message": "Accounts results fetched successfully!",
+    "httpStatus": "OK",
+    "httpStatusCode": 200,
+    "body": {
+      "checkingAccountsList": [
+        {
+          "externalId": "456789266",
+          "accountNumber": "011000204030",
+          "lastFourDigits": "4029",
+          "accountTitle": "QuickPick LLC",
+          "category": "checkingAccount",
+          "currencyLocalLocal": "AED",
+          "openingDate": "12/25/2023",
+          "balance": "23650.00",
+          "status": "Active"
+        }
+      ],
+      "savingAccountsList": [
+        {
+          "externalId": "456781430",
+          "accountNumber": "011000204334",
+          "lastFourDigits": "4333",
+          "accountTitle": "QuickPick LLC",
+          "category": "savingAccount",
+          "currencyLocal": "AED",
+          "openingDate": "24-Nov-2023",
+          "balance": "69850.00",
+          "status": "Active"
+        }
+      ],
+      "tdrList": [
+        {
+          "externalId": "456783296",
+          "depositId": "12548886",
+          "accountTitle": "QuickPick LLC",
+          "lastFourDigits": "8885",
+          "depositAmount": "547855",
+          "profitRate": "5.25",
+          "currencyLocal": "AED",
+          "startDate": "24-Dec-2023",
+          "category": "tdrAccount",
+          "status": "Active"
+        }
+      ],
+      "loanAccountsList": [
+        {
+          "externalId": "456785493",
+          "financeId": "58965586",
+          "accountTitle": "QuickPick LLC",
+          "lastFourDigits": "5585",
+          "profitRate": "5.36",
+          "maturityDate": "24-Dec-2023",
+          "remainInstallment": "20",
+          "paymentAmount": "521",
+          "category": "loanAccount",
+          "status": "Active"
+        }
+      ],
+      "autoLoanAccountsList": [
+        {
+          "externalId": "456781475",
+          "financeId": "58965586",
+          "accountTitle": "QuickPick LLC",
+          "lastFourDigits": "5585",
+          "profitRate": "5.36",
+          "maturityDate": "24-Dec-2023",
+          "remainInstallment": "20",
+          "paymentAmount": "521",
+          "category": "autoloanAccount",
+          "status": "Active"
+        }
+      ],
+      "mortgageAccountsList": [
+        {
+          "externalId": "456786953",
+          "financeId": "58965586",
+          "accountTitle": "QuickPick LLC",
+          "lastFourDigits": "5585",
+          "profitRate": "5.36",
+          "maturityDate": "24-Dec-2023",
+          "remainInstallment": "20",
+          "paymentAmount": "521",
+          "category": "mortgageAccount",
+          "status": "Active"
+        }
+      ],
+      "creditCardAccountList": [
+        {
+          "externalId": "456782545",
+          "accountTitle": "QuickPick LLC",
+          "status": "Active",
+          "balance": "69850.00",
+          "openingDate": "24-Nov-2023",
+          "category": "creditCardAccount",
+          "accountNumber":"4562858963258745",
+          "lastFourDigits": "8745",
+          "creditCardNumber":"4562858963258745"
+        }
+      ]
+    }
+  }
+}

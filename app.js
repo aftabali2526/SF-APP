@@ -57,6 +57,16 @@ app.get('/api/data/:id', (req, res) => {
             res.json(JSON.parse(data));
         });
     }
+    else if((id !== null || id !== undefined ) && id == "2468135" ){
+        fs.readFile('CIF_Data_10.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.json(JSON.parse(data));
+        });
+    }
     
 });
 
@@ -105,6 +115,16 @@ app.post('/api/sf/customerSearch', (req, res) => {
     }
     else if((type == "CIF") && (value !== null || value !== undefined ) && value == "1357924" ){
         fs.readFile('CIF_Data_9.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+    else if((type == "CIF") && (value !== null || value !== undefined ) && value == "2468135" ){
+        fs.readFile('CIF_Data_10.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
@@ -276,6 +296,16 @@ app.post('/api/sf/getAccount', (req, res) => {
           return  res.status(200).json(JSON.parse(data));
         });
     }
+    else if((cif !== null && cif !== undefined ) && cif == "2468135" ){
+        fs.readFile('AccountJson_5.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
     else{
         fs.readFile('No_Result.json', 'utf8', (err, data) => {
             if (err) {
@@ -325,6 +355,16 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
           return  res.status(200).json(JSON.parse(data));
         });
     }
+    if((externalID !== null && externalID !== undefined ) && externalID == "456781430"){
+        fs.readFile('Account_Details_4.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
     else if((externalID !== null && externalID !== undefined ) && externalID == "456789264"){
         fs.readFile('Checking_Account_Details.json', 'utf8', (err, data) => {
             if (err) {
@@ -337,6 +377,16 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
     }
     else if((externalID !== null && externalID !== undefined ) && externalID == "456789265"){
         fs.readFile('Checking_Account_Details_2.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
+    else if((externalID !== null && externalID !== undefined ) && externalID == "456789266"){
+        fs.readFile('Checking_Account_Details_3.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
@@ -365,6 +415,16 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
           return  res.status(200).json(JSON.parse(data));
         });
     }
+    else if((externalID !== null && externalID !== undefined ) && externalID == "456783298"){
+        fs.readFile('Tdr_Account_Details_3.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
     else if((externalID !== null && externalID !== undefined ) && externalID == "456785493"){
         fs.readFile('Loan_Account_Details.json', 'utf8', (err, data) => {
             if (err) {
@@ -377,6 +437,16 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
     }
     else if((externalID !== null && externalID !== undefined ) && externalID == "456785494"){
         fs.readFile('Loan_Account_Details_2.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
+    else if((externalID !== null && externalID !== undefined ) && externalID == "456785495"){
+        fs.readFile('Loan_Account_Details_3.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
@@ -405,6 +475,16 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
           return  res.status(200).json(JSON.parse(data));
         });
     }
+    else if((externalID !== null && externalID !== undefined ) && externalID == "456782545"){
+        fs.readFile('CreditCard_Details_3.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
     else if((externalID !== null && externalID !== undefined ) && externalID == "456781475"){
         fs.readFile('Auto_Loan_Account_Details.json', 'utf8', (err, data) => {
             if (err) {
@@ -425,6 +505,16 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
           return  res.status(200).json(JSON.parse(data));
         });
     }
+    else if((externalID !== null && externalID !== undefined ) && externalID == "456781477"){
+        fs.readFile('Auto_Loan_Account_Details_3.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
     else if((externalID !== null && externalID !== undefined ) && externalID == "456786951"){
         fs.readFile('Mortgage_Account_Details.json', 'utf8', (err, data) => {
             if (err) {
@@ -437,6 +527,16 @@ app.post('/api/sf/getAccountsDetails', (req, res) => {
     }
     else if((externalID !== null && externalID !== undefined ) && externalID == "456786952"){
         fs.readFile('Mortgage_Account_Details_2.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+          return  res.status(200).json(JSON.parse(data));
+        });
+    }
+    else if((externalID !== null && externalID !== undefined ) && externalID == "456786953"){
+        fs.readFile('Mortgage_Account_Details_3.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Internal Server Error' });
@@ -1037,7 +1137,7 @@ app.post('/api/sf/sendotp', (req, res) => {
     }
 
     
-    if(mobileNumber !== null && mobileNumber != undefined && mobileNumber !== ''){
+    if(mobileNumber !== null && mobileNumber != undefined && mobileNumber !== '' &&   mobileNumber == '0554538343' ){
         fs.readFile('sendotp.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);

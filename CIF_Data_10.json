@@ -1,0 +1,82 @@
+{
+   "data":{
+      "code":1,
+      "message":"Customer search results fetched successfully!",
+      "httpStatus":"OK",
+      "httpStatusCode":200,
+      "body":{
+         "cif":"2468135",
+         "fullName":"Quick Pick LLC",
+         "firstName":"Quick",
+         "lastName":"Pick LLC",
+         "middleName":null,
+         "fatherName":"",
+         "matherName":"",
+         "nationalId":"",
+         "nationalIdExpiryDate":"",
+         "dob":"",
+         "gender":"",
+         "creationDate":"",
+         "ntn":"",
+         "cityOfBirth":"",
+         "countryOfBirth":"",
+         "residenceAddress":"",
+         "officeAddress":"Building - Latifa Tower, Flat 610, Sheikh Zayed Road, Dubai",
+         "email":"quickpickllc@email.com",
+         "passportNumber":"",
+         "passportExpiryDate":"",
+         "customerSegment":"",
+         "nationality":"AE",
+         "salary":"",
+         "phoneNumber":"0586958424",
+         "customerSegmentation":"Platinum",
+         "loyaltyPoint":"1500",
+         "customerSatisfaction":"Satisfied",
+         "npsScore":"10",
+         "isSalary":"false",
+         "isDelinquent":"true",
+         "salutation":"Mr.",
+         "branchCode":"1001",
+         "branchName":"Al Nahda Sharja",
+         "mailingAddress":"Al Nahda 1, Dubai",
+         "mailingStreet":"Bin Juma 6, Al Nahda 1",
+         "mailingState":"Dubai",
+         "mailingCity":"Dubai",
+         "mailingZipCode":"370627",
+         "mailingCountry":"United Arab Emirates",
+         "accountOfficer":"252634",
+         "externalId": "456148525",
+         "mobileBanking": true,
+         "internetBanking": true,
+         "eStatement": false,
+         "sms":true,
+         "businessName": "Quick Pick LLC",
+         "smeSegment": "Medium",
+         "industry": "Retail",
+         "annualRevenue": "10000000",
+         "legalEntityType": "LLC",
+         "numberOfEmployees": "500",
+         "businessStartDate": "07/12/2010",
+         "licenseExpiry": "07/12/2030",
+         "kycVerified": "Yes",
+         "lastCreditReviewDate": "07/12/2025",
+         "type": "SME",
+         "availableBalance":{
+            "amount":"596.585",
+            "currency":"AED",
+            "localeFormattedAmount":null
+         },
+         "Legal_ID":[
+            {
+               "Legal_ID_Type":"Passport",
+               "Legal_ID_No":"F458776"
+            },
+            {
+               "Legal_ID_Type":"NationalID",
+               "Legal_ID_No":"789582569854786"
+            }
+         ],
+         "intialDepositAmount":"3652.00"
+      }
+   }
+}

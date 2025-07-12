@@ -1,0 +1,24 @@
+{
+  "data": {
+    "code":1,
+    "message":"Credit Card details fetched successfully!",
+    "httpStatus": "OK",
+    "httpStatusCode": 200,
+    "body": {
+        "cardNumber": "4562858963258746",
+        "cardType": "Visa",
+        "cardName": "QuickPick LLC",
+        "cardProduct": "",
+        "cardLimit": "20000.00",
+        "availBal": "15000.00",
+        "expDate": "6/25/2028",
+        "cardStatus": "Active",
+        "expMonths": "06",
+        "expYear": "2028",
+        "embossName": "QuickPick LLC",
+        "cardCustNumber": "",
+        "lastUpdateDate": "",
+        "lastUpdateTime": ""
+    }
+  }
+}

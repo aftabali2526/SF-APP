@@ -1,0 +1,36 @@
+{
+    "data": {
+      "code": 1,
+      "message": "Auto Loan results fetched successfully!",
+      "httpStatus": "OK",
+      "httpStatusCode": 200,
+      "body": {
+        "financeId": "58965586",
+        "intRate": "4.25",
+        "mbProfitRate": "6.35",
+        "status": "Active",
+        "valueDate": "6/25/2030",
+        "maturityDate": "6/25/2030",
+        "prinLiqAcct": "45698585256",
+        "currency": "AED",
+        "amount": "12000",
+        "profitAmt": "200",
+        "installment": "10",
+        "pastdueAmt": "0",
+        "pastdueType": "",
+        "category": "Auto",
+        "financeType": "Auto",
+        "originalFinAmount": "23000",
+        "branchCode": "1234",
+        "nextDueInstAmt": "203",
+        "nextDueInstDate": "15/6/2024",
+        "bookDate": "",
+        "remainInst": "6",
+        "overDueDays": "",
+        "paymentAmount": "230",
+        "profitRate": "3.6",
+        "tenor": "16"
+      }
+    }
+  }
+  
