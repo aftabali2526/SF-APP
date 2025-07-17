@@ -16,6 +16,17 @@
           "openingDate": "12/25/2023",
           "balance": "23650.00",
           "status": "Active"
+        }, 
+        {
+          "externalId": "147789369",
+          "accountNumber": "022000203258",
+          "lastFourDigits": "3258",
+          "accountTitle": "Abdullah Khan 2",
+          "category": "checkingAccount",
+          "currencyLocalLocal": "AED",
+          "openingDate": "12/13/2024",
+          "balance": "11120.00",
+          "status": "Active"
         }
       ],
       "savingAccountsList": [
