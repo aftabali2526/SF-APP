@@ -243,7 +243,7 @@ app.post('/api/sf/advanceCustomerSearch', (req, res) => {
 
 
 
-app.post('/api/sf/getAccount', (req, res) => {
+app.post('/api/sf/getFinancialAccount', (req, res) => {
     // Extract user data from request body
     const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
     const { cif, externalId } = req.body;
