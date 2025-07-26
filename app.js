@@ -1350,6 +1350,92 @@ app.post('/api/sf/chargesDeduction', (req, res) => {
 });
 
 
+app.post('/api/sf/customerAdditionalDetails', (req, res) => {
+    // Extract user data from request body
+    const { channelid, userid, password,terminalId,messageType,dateTime,tranCode,stan } = req.headers;
+    const { type, value, } = req.body;
+    console.log(JSON.stringify(req.headers));
+    // Validate request data (for demonstration purposes)
+    if (!channelid || !userid || !password) {
+        return res.status(400).json({ error: 'Missing header fields' });
+    }
+
+    if (!type || !value ) {
+        return res.status(400).json({ error: 'Missing required fields, type or value in request' });
+    }
+
+    
+    if((type == "CIF") && (value !== null || value !== undefined ) && value == "4567893" ){
+        fs.readFile('CIF_Data.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else if((type == "CIF") && (value !== null || value !== undefined ) && value == "7892585" ){
+        fs.readFile('CIF_Data_6.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else if((type == "CIF") && (value !== null || value !== undefined ) && value == "1234567" ){
+        fs.readFile('CIF_Data_8.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+    else if((type == "CIF") && (value !== null || value !== undefined ) && value == "1357924" ){
+        fs.readFile('CIF_Data_9.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+    else if((type == "CIF") && (value !== null || value !== undefined ) && value == "2468135" ){
+        fs.readFile('CIF_Data_10.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+    else if((type == "CIF" || type == "AccountNumber" ) && (value !== null || value !== undefined ) && (value == "9632585" || value == "10000000159")){
+        fs.readFile('CIF_Data_1.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }else {
+        fs.readFile('Error.json', 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.status(200).json(JSON.parse(data));
+        });
+    }
+     
+});
+
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
