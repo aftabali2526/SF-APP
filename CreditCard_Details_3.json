@@ -1,6 +1,6 @@
 {
   "data": {
-    "code":0,
+    "code":1,
     "message":"Credit Card details fetched successfully!",
     "httpStatus": "OK",
     "httpStatusCode": 200,

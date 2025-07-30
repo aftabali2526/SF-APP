@@ -1,6 +1,6 @@
 {
     "data":{
-       "code":1,
+       "code":0,
        "message":"No results found!",
        "httpStatus":"INTERNAL_SERVER_ERROR",
        "httpStatusCode":500,
