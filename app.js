@@ -924,7 +924,7 @@ app.post('/api/sf/updateIBMBStatus', (req, res) => {
     }
 
     
-    if(externalId !== null && externalId != undefined && externalId !== '' &&  externalId == '456586951'){
+    if(externalId !== null && externalId != undefined && externalId !== '' &&  externalId == '456586951' || externalId == '456148524'){
         fs.readFile('IBMB_Status_Change.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
@@ -962,7 +962,7 @@ app.post('/api/sf/updateSMSStatus', (req, res) => {
     }
 
     
-    if(externalId !== null && externalId != undefined && externalId !== '' &&  externalId == '456586952'){
+    if(externalId !== null && externalId != undefined && externalId !== '' &&  externalId == '456586952' || externalId == '456148524'){
         fs.readFile('SMS_Status_Change.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
